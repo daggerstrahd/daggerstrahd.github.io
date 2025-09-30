@@ -78,13 +78,15 @@
             <button class="tab-btn" data-tab="principles">Principles</button>
             <button class="tab-btn" data-tab="mechanics">Custom Mechanics</button>
             <button class="tab-btn" data-tab="adversaries">Adversaries</button>
+            <button class="tab-btn" data-tab="items">Items</button>
+            <button class="tab-btn" data-tab="environments">Environments</button>
             <button class="tab-btn" data-tab="character">Character Options</button>
             <button class="tab-btn" data-tab="session">Session Zero</button>
         </div>
 
         <div class="content-box">
             
-            <!-- PITCH -->
+            <!-- PITCH TAB -->
             <div id="tab-pitch" class="tab-content active">
                 <h2>The Pitch</h2>
                 <p>The mists have taken you. You find yourselves in <strong>Barovia</strong>, a land trapped in eternal twilight, ruled by the immortal vampire <strong>Count Strahd von Zarovich</strong>.</p>
@@ -107,7 +109,7 @@
                 </div>
             </div>
 
-            <!-- OVERVIEW -->
+            <!-- OVERVIEW TAB -->
             <div id="tab-overview" class="tab-content">
                 <h2>Campaign Overview</h2>
                 
@@ -127,7 +129,7 @@
                 </div>
             </div>
 
-            <!-- PRINCIPLES -->
+            <!-- PRINCIPLES TAB -->
             <div id="tab-principles" class="tab-content">
                 <h2>Principles</h2>
                 
@@ -148,49 +150,47 @@
                 </div>
                 <div class="principle-card">
                     <h4>Play Strahd as Complex, Not Evil</h4>
-                    <p>Strahd is a tragic figure. He can be charming, philosophical, even merciful when it suits him.</p>
+                    <p>Strahd is a tragic figure. Show his charisma, his loneliness, his terrible love. Make players understand him even as they oppose him.</p>
                 </div>
             </div>
 
-            <!-- MECHANICS -->
+            <!-- MECHANICS TAB -->
             <div id="tab-mechanics" class="tab-content">
                 <h2>Custom Mechanics</h2>
                 
-                <h3>The Mists of Ravenloft</h3>
+                <h3>The Mists of Barovia</h3>
                 <div class="card-lg">
-                    <p>Deadly fog surrounds Barovia, preventing escape.</p>
-                    <h4>Effect:</h4>
-                    <ul>
-                        <li>Characters attempting to leave must make a Presence + Instinct roll (Difficulty 18)</li>
-                        <li>Failure: Lost in mists, mark 2 Stress per hour</li>
-                    </ul>
+                    <p>Deadly fog surrounds Barovia. Any creature that tries to leave must make an <strong>Instinct roll (Difficulty 20)</strong> every hour or gain 1 level of Stress. Even flying creatures cannot escape.</p>
+                    <p>The mists turn travelers around—no matter how far you walk, you end up back in Barovia.</p>
                 </div>
                 
-                <h3>Dim Barovia (Sunlight Rules)</h3>
+                <h3>Sunlight in Barovia</h3>
                 <div class="card-lg">
-                    <p>The sun never truly shines in Barovia.</p>
-                    <h4>Effect:</h4>
-                    <ul>
-                        <li>Daylight does NOT count as sunlight for vampire vulnerabilities</li>
-                        <li>Strahd can move about during the day</li>
-                        <li>Magical sunlight still affects vampires normally</li>
-                    </ul>
+                    <p>By the will of the Dark Powers, the sun never fully shines. Even during the day, thick clouds or mist obscure the light.</p>
+                    <p><strong>Effect:</strong> Daylight in Barovia provides bright light but does NOT count as sunlight for vampire vulnerabilities. Strahd and his spawn can move about during the day. Only magical sunlight (from spells or items like the Sunsword) affects vampires normally.</p>
                 </div>
                 
                 <h3>Fortunes of Ravenloft</h3>
                 <div class="card-lg">
-                    <p>Madam Eva performs a tarokka reading determining artifact locations.</p>
+                    <p>When the party first meets Madam Eva, she performs a tarokka card reading that determines the location of three powerful artifacts and where Strahd can be confronted.</p>
                     <h4>The Fated Items:</h4>
                     <ul>
-                        <li>The Tome of Strahd</li>
-                        <li>The Sunsword</li>
-                        <li>The Holy Symbol of Ravenkind</li>
+                        <li>The Tome of Strahd: A journal revealing Strahd's history</li>
+                        <li>The Sunsword: A legendary blade that deals magic damage and creates true sunlight</li>
+                        <li>The Holy Symbol of Ravenkind: Can hold vampires at bay and cause direct damage</li>
                     </ul>
-                    <p>When a PC discovers a fated item, they gain 3 Hope and clear 1d4 Stress.</p>
+                    <p>Whenever a PC discovers one of the fated items, they immediately gain <strong>3 Hope tokens</strong> and clear <strong>1d4 Stress</strong>.</p>
+                </div>
+                
+                <h3>Hope in Despair</h3>
+                <div class="card-lg">
+                    <p>Barovia is a land where hope dies slowly. This mechanic represents the difficulty of maintaining morale.</p>
+                    <p><strong>Rule:</strong> At the start of each session, each PC must make a <strong>Presence roll (Difficulty 12)</strong>. On a failure, they start the session with 1 fewer Hope token (minimum 0).</p>
+                    <p><strong>Exception:</strong> If the party made significant progress last session (rescued someone, found a treasure, defeated a major foe), this roll is not required.</p>
                 </div>
             </div>
 
-            <!-- ADVERSARIES -->
+            <!-- ADVERSARIES TAB -->
             <div id="tab-adversaries" class="tab-content">
                 <h2>Adversaries</h2>
                 
@@ -255,47 +255,182 @@
                         <p style="font-size: 0.875rem;">Keepers of the Feather, allies to PCs.</p>
                         <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13, HP 3, Attack +2</p>
                     </div>
+                </div>
+            </div>
+
+            <!-- ITEMS TAB -->
+            <div id="tab-items" class="tab-content">
+                <h2>Magic Items</h2>
+                
+                <div style="background: linear-gradient(to right, rgba(185, 28, 28, 0.3), transparent); padding: 1rem; border-left: 4px solid #dc2626; margin-bottom: 2rem; border-radius: 0.25rem;">
+                    <p style="margin: 0; font-style: italic; color: #fca5a5;">
+                        These legendary artifacts can turn the tide against Strahd. Finding the three fated treasures grants immediate benefits: 3 Hope tokens and clear 1d4 Stress.
+                    </p>
+                </div>
+
+                <h3>The Three Fated Treasures</h3>
+
+                <div class="card">
+                    <h4>The Sunsword</h4>
+                    <p style="font-style: italic; color: #fbbf24; font-size: 0.875rem; margin-bottom: 0.5rem;">Legendary Weapon (Longsword)</p>
+                    
+                    <p style="font-size: 0.875rem;"><strong>Discovery Benefit:</strong> Gain 3 Hope tokens and clear 1d4 Stress</p>
+                    
+                    <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Properties:</strong> Attack +4, Damage 2d8+4 (magic, radiant), Creates TRUE SUNLIGHT</p>
+                    
+                    <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Blade of Dawn:</strong> Summon a blade of pure sunlight. Sheds bright light 30ft, dim light 30ft. This counts as TRUE SUNLIGHT (affects vampires). Advantage on attacks vs undead.</p>
+                    
+                    <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Sentient Weapon:</strong> Chaotic Good, communicates through emotions. Burns with desire for revenge against Strahd. Fears its own destruction.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Holy Symbol of Ravenkind</h4>
+                    <p style="font-style: italic; color: #fbbf24; font-size: 0.875rem; margin-bottom: 0.5rem;">Legendary Wondrous Item</p>
+                    
+                    <p style="font-size: 0.875rem;"><strong>Discovery Benefit:</strong> Gain 3 Hope tokens and clear 1d4 Stress</p>
+                    
+                    <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Description:</strong> Platinum amulet shaped like the sun with a crystal center. Requires good alignment. <strong>Charges:</strong> 10, regains 1d6+4 at dawn</p>
+                    
+                    <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Features:</strong></p>
+                    <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
+                        <li><strong>Hold Vampires (1 charge):</strong> Vampires within 30ft make Difficulty 16 Instinct roll with Fear or paralyzed 1 minute</li>
+                        <li><strong>Turn Undead Enhanced (3 charges):</strong> Undead roll with disadvantage</li>
+                        <li><strong>Sunlight (5 charges):</strong> TRUE SUNLIGHT in 30ft radius for 10 minutes</li>
+                        <li><strong>Healing Light (1/dawn):</strong> Heal 3d8+3 HP and clear 1 Stress (30ft range)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Tome of Strahd</h4>
+                    <p style="font-style: italic; color: #fbbf24; font-size: 0.875rem; margin-bottom: 0.5rem;">Legendary Wondrous Item (Book)</p>
+                    
+                    <p style="font-size: 0.875rem;"><strong>Discovery Benefit:</strong> Gain 3 Hope tokens and clear 1d4 Stress</p>
+                    
+                    <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Know Thy Enemy:</strong> Spend 1 hour reading to gain 1 Hope token, learn one of Strahd's flaws/desires/fears, and gain advantage on Presence rolls against Strahd when leveraging this knowledge.</p>
+                    
+                    <p style="font-size: 0.875rem;"><strong>Strahd's Obsession:</strong> If Strahd learns you have his tome, he becomes obsessed with recovering it and targets whoever carries it.</p>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Other Notable Items</h3>
+
+                <div class="grid grid-2">
                     <div class="card">
-                        <h4>Izek Strazni (Tier 2)</h4>
-                        <p style="font-size: 0.875rem;">Vallaki's brutal enforcer with fiendish arm.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 15, HP 7, Attack +3</p>
+                        <h4>Icon of Ravenloft</h4>
+                        <p style="font-size: 0.875rem;">Silver statuette. Creatures within 30ft protected from fiends/undead.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Augury (1/dawn), Bane of Undead (+2 Difficulty), Cure Wounds (1/dawn, 3d8+3 HP)</p>
                     </div>
+
                     <div class="card">
-                        <h4>Baba Lysaga (Tier 3 Solo)</h4>
-                        <p style="font-size: 0.875rem;">Ancient witch, claims to be Strahd's mother.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 17, HP 7, Attack +3</p>
+                        <h4>Saint Markovia's Thighbone</h4>
+                        <p style="font-size: 0.875rem;">Mace, Attack +2, Damage 2d6+2. Vampires hit make Difficulty 15 roll or stunned.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Crumbles to dust after use in battle vs vampires</p>
                     </div>
+
                     <div class="card">
-                        <h4>The Abbot (Tier 3)</h4>
-                        <p style="font-size: 0.875rem;">Fallen deva creating flesh golem bride.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16, HP 6, Attack +2</p>
+                        <h4>Blood Spear</h4>
+                        <p style="font-size: 0.875rem;">Attack +1, Damage 2d4+1. Gain 2d6 temp HP when reducing foe to 0 HP.</p>
                     </div>
+
                     <div class="card">
-                        <h4>Mongrelfolk (Tier 1)</h4>
-                        <p style="font-size: 0.875rem;">Twisted humanoid-animal hybrids.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 12, HP 2, Attack +1</p>
-                    </div>
-                    <div class="card">
-                        <h4>Revenants (Tier 2)</h4>
-                        <p style="font-size: 0.875rem;">Undead knights seeking vengeance on Strahd.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14, HP 8, Attack +3</p>
-                    </div>
-                    <div class="card">
-                        <h4>Tree Blight (Tier 2)</h4>
-                        <p style="font-size: 0.875rem;">Evil awakened trees near Wizard of Wines.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 15, HP 6, Attack +3</p>
+                        <h4>Gulthias Staff</h4>
+                        <p style="font-size: 0.875rem;">Attack +1, Damage 2d4+1. 10 charges. Vampiric Strike (1 charge): regain HP equal to damage.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Evil plants don't see you as hostile</p>
                     </div>
                 </div>
             </div>
 
-            <!-- CHARACTER OPTIONS -->
+            <!-- ENVIRONMENTS TAB -->
+            <div id="tab-environments" class="tab-content">
+                <h2>Key Environments</h2>
+                
+                <div style="background: linear-gradient(to right, rgba(185, 28, 28, 0.3), transparent); padding: 1rem; border-left: 4px solid #dc2626; margin-bottom: 2rem; border-radius: 0.25rem;">
+                    <p style="margin: 0; font-style: italic; color: #fca5a5;">
+                        In Daggerheart, environments are active participants with Passive, Action, and Reaction features.
+                    </p>
+                </div>
+
+                <div class="card-lg">
+                    <h3 style="margin-top: 0;">Village of Barovia</h3>
+                    <p style="font-style: italic; color: #fbbf24; font-size: 0.875rem;">Tier 1-2 Social/Exploration</p>
+                    <p style="font-size: 0.875rem;">The saddest place in the land. Fog everywhere. Castle Ravenloft looms overhead.</p>
+                    
+                    <h4 style="margin-top: 1rem;">Features</h4>
+                    <ul style="font-size: 0.875rem;">
+                        <li><strong>Mist-Shrouded (Passive):</strong> Visibility 60ft. Instinct Difficulty 12 or mark 1 Stress from whispers</li>
+                        <li><strong>Terrified Villagers (Passive):</strong> Won't help. Presence Difficulty 14+ to persuade</li>
+                        <li><strong>Castle's Gaze (Reaction):</strong> GM spends 1 Fear for Strahd to become aware</li>
+                    </ul>
+                </div>
+
+                <div class="card-lg">
+                    <h3 style="margin-top: 0;">Death House</h3>
+                    <p style="font-style: italic; color: #fbbf24; font-size: 0.875rem;">Tier 1-2 Dungeon</p>
+                    <p style="font-size: 0.875rem;">Living, malicious house. Won't let party leave until they face the Shambling Mound.</p>
+                    
+                    <h4 style="margin-top: 1rem;">Features</h4>
+                    <ul style="font-size: 0.875rem;">
+                        <li><strong>Living House (Passive):</strong> Doors lock, windows sealed</li>
+                        <li><strong>Animated Armor (Action):</strong> GM spends 1 Fear to animate as Tier 1 minions</li>
+                        <li><strong>Scythes (Action):</strong> 1 Fear for blade traps (Agility Difficulty 13, 2d10 damage)</li>
+                        <li><strong>Escape Sequence:</strong> House tries to kill party. Walls collapse, stairs crumble</li>
+                    </ul>
+                    <p style="font-size: 0.875rem;"><strong>Reward:</strong> Escape = advance to 3rd level</p>
+                </div>
+
+                <div class="card-lg">
+                    <h3 style="margin-top: 0;">Castle Ravenloft</h3>
+                    <p style="font-style: italic; color: #fbbf24; font-size: 0.875rem;">Tier 4-10 Dungeon</p>
+                    <p style="font-size: 0.875rem;">Ancient castle on 1000-foot pillar. Gothic spires, thousands of bats. Strahd watches all.</p>
+                    
+                    <h4 style="margin-top: 1rem;">Features</h4>
+                    <ul style="font-size: 0.875rem;">
+                        <li><strong>Strahd's Domain (Passive):</strong> He moves through walls, teleports, always aware</li>
+                        <li><strong>Ever-Watching (Reaction):</strong> Spend Fear for Strahd to observe and taunt</li>
+                        <li><strong>Misleading Architecture (Passive):</strong> Knowledge Difficulty 14 to navigate</li>
+                        <li><strong>Windows to Void (Passive):</strong> 1000-foot drops everywhere</li>
+                    </ul>
+                </div>
+
+                <div class="card-lg">
+                    <h3 style="margin-top: 0;">Town of Vallaki</h3>
+                    <p style="font-style: italic; color: #fbbf24; font-size: 0.875rem;">Tier 2-4 Social</p>
+                    <p style="font-size: 0.875rem;">Mandatory festivals enforced. Baron punishes anyone showing despair.</p>
+                    
+                    <h4 style="margin-top: 1rem;">Features</h4>
+                    <ul style="font-size: 0.875rem;">
+                        <li><strong>Festival Mania (Passive):</strong> Weekly festivals. Must attend and smile or face stocks</li>
+                        <li><strong>Baron's Enforcers (Action):</strong> Izek Strazni patrols, arrests rule-breakers</li>
+                        <li><strong>False Cheer (Passive):</strong> Presence Difficulty 13 to sense underlying fear</li>
+                    </ul>
+                </div>
+
+                <div class="card-lg">
+                    <h3 style="margin-top: 0;">Amber Temple</h3>
+                    <p style="font-style: italic; color: #fbbf24; font-size: 0.875rem;">Tier 7-10 Dungeon</p>
+                    <p style="font-size: 0.875rem;">Temple in mountains. Amber sarcophagi hold vestiges of dead gods offering dark gifts.</p>
+                    
+                    <h4 style="margin-top: 1rem;">Features</h4>
+                    <ul style="font-size: 0.875rem;">
+                        <li><strong>Extreme Cold (Passive):</strong> Instinct Difficulty 13 every hour or mark 1 Stress</li>
+                        <li><strong>Amber Sarcophagi (Action):</strong> Touch one = offered DARK GIFT (power + curse)</li>
+                        <li><strong>Dark Gift Choice:</strong> Accept = gain ability + curse. Refuse = Instinct Difficulty 16 or mark 2 Stress</li>
+                    </ul>
+                </div>
+
+                <div style="background: rgba(30, 41, 59, 0.5); padding: 1.5rem; border-radius: 0.5rem; border: 1px solid #475569; margin-top: 2rem;">
+                    <h4 style="color: #ef4444; margin-top: 0;">Tier Scaling Guide</h4>
+                    <p style="font-size: 0.875rem; color: #d1d5db;"><strong>Tier 1-2:</strong> Village of Barovia, Death House | <strong>Tier 3-4:</strong> Vallaki, Old Bonegrinder | <strong>Tier 5-6:</strong> Argynvostholt, werewolf den | <strong>Tier 7-9:</strong> Castle Ravenloft, Amber Temple | <strong>Tier 10+:</strong> Final confrontation with Strahd</p>
+                </div>
+            </div>
+
+            <!-- CHARACTER OPTIONS TAB -->
             <div id="tab-character" class="tab-content">
                 <h2>Character Options</h2>
                 
-                <h3>Fitting Ancestries into Barovia</h3>
+                <h3>Ancestries in Barovia</h3>
                 <div class="card">
-                    <h4>Humans</h4>
-                    <p style="font-size: 0.875rem;">The most common ancestry. Native Barovians are pale, dark-haired, and haunted.</p>
+                    <h4>Human</h4>
+                    <p style="font-size: 0.875rem;">Native Barovians are pale, dark-haired, and haunted.</p>
                 </div>
                 <div class="card">
                     <h4>Fungril</h4>
@@ -313,7 +448,7 @@
                 </div>
             </div>
 
-            <!-- SESSION ZERO -->
+            <!-- SESSION ZERO TAB -->
             <div id="tab-session" class="tab-content">
                 <h2>Session Zero Questions</h2>
                 
