@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curse of Strahd - Daggerheart Campaign Frame</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: linear-gradient(to bottom, #1a1a1a, #4a0e0e, #1a1a1a);
+            color: #f3f4f6;
+            min-height: 100vh;
+            padding: 1.5rem;
+        }
+        .container { max-width: 72rem; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 2rem; border-bottom: 2px solid #991b1b; padding-bottom: 1.5rem; }
+        .header h1 { font-size: 3rem; font-weight: bold; color: #fecaca; margin: 0.75rem 0; }
+        .header-subtitle { font-size: 1.25rem; color: #fca5a5; font-style: italic; }
+        
+        .nav-container { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem; justify-content: center; }
+        .tab-btn {
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 600;
+            font-size: 1rem;
+            background-color: #1f2937;
+            color: #d1d5db;
+        }
+        .tab-btn:hover { background-color: #374151; }
+        .tab-btn.active { background-color: #7f1d1d; color: #fef2f2; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); }
+        
+        .content-box { background-color: #1f2937; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); border: 1px solid #7f1d1d; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        
+        h2 { font-size: 1.875rem; font-weight: bold; color: #f87171; border-bottom: 1px solid #991b1b; padding-bottom: 0.75rem; margin-bottom: 1.5rem; }
+        h3 { font-size: 1.5rem; font-weight: 600; color: #fca5a5; margin: 1.5rem 0 0.75rem 0; }
+        h4 { font-weight: bold; color: #f87171; margin-bottom: 0.5rem; }
+        p { color: #d1d5db; line-height: 1.75; margin: 0.5rem 0; }
+        
+        .card { background-color: #111827; border: 1px solid #991b1b; border-radius: 0.5rem; padding: 1rem; margin: 0.5rem 0; }
+        .card-lg { background-color: #111827; border: 1px solid #991b1b; border-radius: 0.5rem; padding: 1.25rem; margin: 1rem 0; }
+        
+        ul, ol { padding-left: 1.5rem; margin: 0.5rem 0; }
+        li { color: #d1d5db; margin: 0.5rem 0; }
+        
+        .grid { display: grid; gap: 1rem; margin: 1rem 0; }
+        .grid-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-3 { grid-template-columns: repeat(3, 1fr); }
+        
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        }
+        
+        .principle-card { background-color: #111827; border-left: 4px solid #dc2626; padding: 1rem; border-radius: 0.25rem; margin: 0.5rem 0; }
+        .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; margin: 1rem 0; }
+        .stat-box { background-color: #030712; padding: 0.5rem; border-radius: 0.25rem; }
+        .stat-label { font-size: 0.75rem; color: #6b7280; }
+        .stat-value { color: #f87171; font-weight: bold; }
+        
+        .footer { margin-top: 2rem; text-align: center; color: #6b7280; font-size: 0.875rem; border-top: 1px solid #7f1d1d; padding-top: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Curse of Strahd</h1>
+            <p class="header-subtitle">A Daggerheart Campaign Frame</p>
+        </div>
+
+        <div class="nav-container">
+            <button class="tab-btn active" data-tab="pitch">The Pitch</button>
+            <button class="tab-btn" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="principles">Principles</button>
+            <button class="tab-btn" data-tab="mechanics">Custom Mechanics</button>
+            <button class="tab-btn" data-tab="adversaries">Adversaries</button>
+            <button class="tab-btn" data-tab="character">Character Options</button>
+            <button class="tab-btn" data-tab="session">Session Zero</button>
+        </div>
+
+        <div class="content-box">
+            
+            <!-- PITCH -->
+            <div id="tab-pitch" class="tab-content active">
+                <h2>The Pitch</h2>
+                <p>The mists have taken you. You find yourselves in <strong>Barovia</strong>, a land trapped in eternal twilight, ruled by the immortal vampire <strong>Count Strahd von Zarovich</strong>.</p>
+                <p>A fortune-teller named <strong>Madam Eva</strong> reveals your destiny through her tarokka cards—you are meant to face the ancient evil that haunts this land.</p>
+                <p>Can you break the curse and free Barovia? Or will you become just another ghost wandering the Old Svalich Road?</p>
+                
+                <div class="card-lg" style="margin-top: 2rem;">
+                    <h4>Content Warnings</h4>
+                    <ul>
+                        <li>Gothic horror and pervasive dread</li>
+                        <li>Vampirism and undeath</li>
+                        <li>Child endangerment</li>
+                    </ul>
+                </div>
+                
+                <div class="grid grid-3">
+                    <div class="card"><h4>TONE</h4><p style="font-size: 0.875rem;">Dark, Gothic, Tragic</p></div>
+                    <div class="card"><h4>THEMES</h4><p style="font-size: 0.875rem;">Corruption, Doomed Love, Hope vs Despair</p></div>
+                    <div class="card"><h4>TOUCHSTONES</h4><p style="font-size: 0.875rem;">Dracula, Castlevania, Bloodborne</p></div>
+                </div>
+            </div>
+
+            <!-- OVERVIEW -->
+            <div id="tab-overview" class="tab-content">
+                <h2>Campaign Overview</h2>
+                
+                <h3>The Land of Barovia</h3>
+                <p>Barovia exists in a demiplane, torn from its original world by mysterious Dark Powers. Deadly mists surround the land. The sun never fully breaks through the clouds, casting everything in perpetual gloom.</p>
+                
+                <h3>Strahd von Zarovich</h3>
+                <p>Once a proud conqueror, Strahd made a terrible pact to gain eternal life. He murdered his brother Sergei and became a vampire, but lost Tatyana forever.</p>
+                <p>Every generation, Tatyana's soul is reborn. The current incarnation is Ireena Kolyana.</p>
+                
+                <h3>Key Locations</h3>
+                <div class="grid grid-2">
+                    <div class="card"><h4>Castle Ravenloft</h4><p style="font-size: 0.875rem;">Strahd's towering fortress atop the Pillarstone.</p></div>
+                    <div class="card"><h4>Village of Barovia</h4><p style="font-size: 0.875rem;">A broken place where hope has died.</p></div>
+                    <div class="card"><h4>Town of Vallaki</h4><p style="font-size: 0.875rem;">Forced festivals hide corruption.</p></div>
+                    <div class="card"><h4>Old Bonegrinder</h4><p style="font-size: 0.875rem;">Night hags bake dream pastries from children's bones.</p></div>
+                </div>
+            </div>
+
+            <!-- PRINCIPLES -->
+            <div id="tab-principles" class="tab-content">
+                <h2>Principles</h2>
+                
+                <h3>Player Principles</h3>
+                <div class="principle-card">
+                    <h4>Embrace the Horror</h4>
+                    <p>Barovia is a land of dread and despair. Let your character feel fear and doubt. The darkness makes your courage shine brighter.</p>
+                </div>
+                <div class="principle-card">
+                    <h4>Find Light in Darkness</h4>
+                    <p>There are people worth saving. Your Hope tokens represent actual hope—use them to create moments that matter.</p>
+                </div>
+                
+                <h3>GM Principles</h3>
+                <div class="principle-card">
+                    <h4>Make Barovia Feel Alive (and Dead)</h4>
+                    <p>Describe the oppressive atmosphere constantly. But also show signs of life struggling to persist.</p>
+                </div>
+                <div class="principle-card">
+                    <h4>Play Strahd as Complex, Not Evil</h4>
+                    <p>Strahd is a tragic figure. He can be charming, philosophical, even merciful when it suits him.</p>
+                </div>
+            </div>
+
+            <!-- MECHANICS -->
+            <div id="tab-mechanics" class="tab-content">
+                <h2>Custom Mechanics</h2>
+                
+                <h3>The Mists of Ravenloft</h3>
+                <div class="card-lg">
+                    <p>Deadly fog surrounds Barovia, preventing escape.</p>
+                    <h4>Effect:</h4>
+                    <ul>
+                        <li>Characters attempting to leave must make a Presence + Instinct roll (Difficulty 18)</li>
+                        <li>Failure: Lost in mists, mark 2 Stress per hour</li>
+                    </ul>
+                </div>
+                
+                <h3>Dim Barovia (Sunlight Rules)</h3>
+                <div class="card-lg">
+                    <p>The sun never truly shines in Barovia.</p>
+                    <h4>Effect:</h4>
+                    <ul>
+                        <li>Daylight does NOT count as sunlight for vampire vulnerabilities</li>
+                        <li>Strahd can move about during the day</li>
+                        <li>Magical sunlight still affects vampires normally</li>
+                    </ul>
+                </div>
+                
+                <h3>Fortunes of Ravenloft</h3>
+                <div class="card-lg">
+                    <p>Madam Eva performs a tarokka reading determining artifact locations.</p>
+                    <h4>The Fated Items:</h4>
+                    <ul>
+                        <li>The Tome of Strahd</li>
+                        <li>The Sunsword</li>
+                        <li>The Holy Symbol of Ravenkind</li>
+                    </ul>
+                    <p>When a PC discovers a fated item, they gain 3 Hope and clear 1d4 Stress.</p>
+                </div>
+            </div>
+
+            <!-- ADVERSARIES -->
+            <div id="tab-adversaries" class="tab-content">
+                <h2>Adversaries</h2>
+                
+                <h3>Strahd von Zarovich</h3>
+                <div class="card-lg">
+                    <p style="font-weight: bold; color: #f87171;">Tier 4 Solo - The Ancient Vampire Lord</p>
+                    <p>The ancient vampire lord of Barovia, a tragic figure of immense power and cunning.</p>
+                    
+                    <div class="stat-grid">
+                        <div class="stat-box"><span class="stat-label">Difficulty</span><p class="stat-value">20</p></div>
+                        <div class="stat-box"><span class="stat-label">Thresholds</span><p class="stat-value">15/30</p></div>
+                        <div class="stat-box"><span class="stat-label">HP</span><p class="stat-value">8</p></div>
+                        <div class="stat-box"><span class="stat-label">Attack</span><p class="stat-value">+5</p></div>
+                    </div>
+                    
+                    <h4>Key Features</h4>
+                    <ul style="font-size: 0.875rem;">
+                        <li><strong>Shapechanger:</strong> Transform into bat, wolf, or mist</li>
+                        <li><strong>Legendary Resistance:</strong> Ignore effects 3 times per session</li>
+                        <li><strong>Regeneration:</strong> Clear 2 HP at start of turn</li>
+                        <li><strong>Heart of Sorrow:</strong> Damage transferred to crystal heart</li>
+                        <li><strong>Charm:</strong> Dominate minds (Difficulty 18)</li>
+                    </ul>
+                    
+                    <h4>Weaknesses</h4>
+                    <ul style="font-size: 0.875rem;">
+                        <li>Cannot enter homes without invitation</li>
+                        <li>True sunlight stops regeneration</li>
+                        <li>Stake through heart destroys permanently</li>
+                    </ul>
+                </div>
+                
+                <h3>Common Adversaries</h3>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h4>Vampire Spawn (Tier 2)</h4>
+                        <p style="font-size: 0.875rem;">Lesser vampires serving Strahd.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14, HP 4, Attack +3</p>
+                    </div>
+                    <div class="card">
+                        <h4>Werewolves (Tier 2)</h4>
+                        <p style="font-size: 0.875rem;">Shapeshifting hunters with pack tactics.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14, HP 5, Attack +3</p>
+                    </div>
+                    <div class="card">
+                        <h4>Night Hags (Tier 3)</h4>
+                        <p style="font-size: 0.875rem;">Hideous crones at Old Bonegrinder.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16, HP 5</p>
+                    </div>
+                    <div class="card">
+                        <h4>Dire Wolves (Tier 1)</h4>
+                        <p style="font-size: 0.875rem;">Enormous wolves serving Strahd.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13, HP 4, Attack +3</p>
+                    </div>
+                    <div class="card">
+                        <h4>Strahd Zombies (Tier 1 Horde)</h4>
+                        <p style="font-size: 0.875rem;">Shambling undead guards in groups.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 11, HP 1 each, Attack +1</p>
+                    </div>
+                    <div class="card">
+                        <h4>Wereravens (Tier 1-2)</h4>
+                        <p style="font-size: 0.875rem;">Keepers of the Feather, allies to PCs.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13, HP 3, Attack +2</p>
+                    </div>
+                    <div class="card">
+                        <h4>Izek Strazni (Tier 2)</h4>
+                        <p style="font-size: 0.875rem;">Vallaki's brutal enforcer with fiendish arm.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 15, HP 7, Attack +3</p>
+                    </div>
+                    <div class="card">
+                        <h4>Baba Lysaga (Tier 3 Solo)</h4>
+                        <p style="font-size: 0.875rem;">Ancient witch, claims to be Strahd's mother.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 17, HP 7, Attack +3</p>
+                    </div>
+                    <div class="card">
+                        <h4>The Abbot (Tier 3)</h4>
+                        <p style="font-size: 0.875rem;">Fallen deva creating flesh golem bride.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16, HP 6, Attack +2</p>
+                    </div>
+                    <div class="card">
+                        <h4>Mongrelfolk (Tier 1)</h4>
+                        <p style="font-size: 0.875rem;">Twisted humanoid-animal hybrids.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 12, HP 2, Attack +1</p>
+                    </div>
+                    <div class="card">
+                        <h4>Revenants (Tier 2)</h4>
+                        <p style="font-size: 0.875rem;">Undead knights seeking vengeance on Strahd.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14, HP 8, Attack +3</p>
+                    </div>
+                    <div class="card">
+                        <h4>Tree Blight (Tier 2)</h4>
+                        <p style="font-size: 0.875rem;">Evil awakened trees near Wizard of Wines.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 15, HP 6, Attack +3</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHARACTER OPTIONS -->
+            <div id="tab-character" class="tab-content">
+                <h2>Character Options</h2>
+                
+                <h3>Fitting Ancestries into Barovia</h3>
+                <div class="card">
+                    <h4>Humans</h4>
+                    <p style="font-size: 0.875rem;">The most common ancestry. Native Barovians are pale, dark-haired, and haunted.</p>
+                </div>
+                <div class="card">
+                    <h4>Fungril</h4>
+                    <p style="font-size: 0.875rem;">Mushroom folk who grow in damp, decaying places. Their connection to death resonates here.</p>
+                </div>
+                
+                <h3>Communities in Barovia</h3>
+                <div class="card">
+                    <h4>Wildborne</h4>
+                    <p style="font-size: 0.875rem;">Those who live in the Svalich Woods. The Keepers of the Feather (wereravens) could be Wildborne.</p>
+                </div>
+                <div class="card">
+                    <h4>Order-Bound</h4>
+                    <p style="font-size: 0.875rem;">Survivors of the Order of the Silver Dragon or the church of the Morninglord.</p>
+                </div>
+            </div>
+
+            <!-- SESSION ZERO -->
+            <div id="tab-session" class="tab-content">
+                <h2>Session Zero Questions</h2>
+                
+                <h3>Safety and Boundaries</h3>
+                <div class="card-lg">
+                    <ol>
+                        <li>What horror themes are you comfortable exploring?</li>
+                        <li>How graphic should violence be?</li>
+                        <li>What safety tools will we use?</li>
+                        <li>How do we handle character death?</li>
+                    </ol>
+                </div>
+                
+                <h3>Character Connections</h3>
+                <div class="card-lg">
+                    <ol start="5">
+                        <li>How did your character arrive in Barovia?</li>
+                        <li>What do you hope to accomplish?</li>
+                        <li>Which PC does your character trust most?</li>
+                        <li>What is your character afraid of losing?</li>
+                    </ol>
+                </div>
+                
+                <h3>Barovia Specific</h3>
+                <div class="card-lg">
+                    <ol start="9">
+                        <li>Have you heard stories of Strahd before entering?</li>
+                        <li>Do you believe in prophecy and fate?</li>
+                        <li>What does your character think of the Vistani?</li>
+                        <li>What keeps your character fighting when all seems lost?</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>Curse of Strahd © Wizards of the Coast</p>
+            <p>Converted to Daggerheart System</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll('.tab-content');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const target = this.getAttribute('data-tab');
+                    
+                    buttons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    contents.forEach(c => c.classList.remove('active'));
+                    document.getElementById('tab-' + target).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
