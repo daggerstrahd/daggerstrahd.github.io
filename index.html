@@ -192,68 +192,279 @@
 
             <!-- ADVERSARIES TAB -->
             <div id="tab-adversaries" class="tab-content">
-                <h2>Adversaries</h2>
+                <h2>Adversaries of Barovia</h2>
                 
-                <h3>Strahd von Zarovich</h3>
+                <div style="background: linear-gradient(to right, rgba(185, 28, 28, 0.3), transparent); padding: 1rem; border-left: 4px solid #dc2626; margin-bottom: 2rem; border-radius: 0.25rem;">
+                    <p style="margin: 0; font-style: italic; color: #fca5a5;">
+                        Complete adversary roster for Curse of Strahd. Organized by tier for easy reference during play.
+                    </p>
+                </div>
+
+                <h3>Tier 4 - Legendary Adversaries</h3>
+                
+                <!-- STRAHD VON ZAROVICH -->
                 <div class="card-lg">
-                    <p style="font-weight: bold; color: #f87171;">Tier 4 Solo - The Ancient Vampire Lord</p>
-                    <p>The ancient vampire lord of Barovia, a tragic figure of immense power and cunning.</p>
+                    <h4 style="color: #f87171; font-size: 1.25rem; margin: 0 0 0.5rem 0;">Strahd von Zarovich - Solo</h4>
+                    <p style="font-style: italic; color: #9ca3af; margin-bottom: 0.75rem;">The ancient vampire lord of Barovia. Aristocratic, cunning, and nearly unstoppable.</p>
                     
                     <div class="stat-grid">
                         <div class="stat-box"><span class="stat-label">Difficulty</span><p class="stat-value">20</p></div>
                         <div class="stat-box"><span class="stat-label">Thresholds</span><p class="stat-value">15/30</p></div>
                         <div class="stat-box"><span class="stat-label">HP</span><p class="stat-value">8</p></div>
+                        <div class="stat-box"><span class="stat-label">Stress</span><p class="stat-value">6</p></div>
                         <div class="stat-box"><span class="stat-label">Attack</span><p class="stat-value">+5</p></div>
                     </div>
                     
-                    <h4>Key Features</h4>
+                    <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Attack:</strong> Vampiric Strike (2d12+8 magic, marks 2 Stress on Major Hit)</p>
+                    
+                    <h4 style="margin-top: 1rem;">Features</h4>
                     <ul style="font-size: 0.875rem;">
-                        <li><strong>Shapechanger:</strong> Transform into bat, wolf, or mist</li>
-                        <li><strong>Legendary Resistance:</strong> Ignore effects 3 times per session</li>
-                        <li><strong>Regeneration:</strong> Clear 2 HP at start of turn</li>
-                        <li><strong>Heart of Sorrow:</strong> Damage transferred to crystal heart</li>
-                        <li><strong>Charm:</strong> Dominate minds (Difficulty 18)</li>
+                        <li><strong>Shapechanger:</strong> Transform into bat, wolf, or mist form</li>
+                        <li><strong>Legendary Resistance:</strong> 3x/session ignore damage or effects</li>
+                        <li><strong>Regeneration:</strong> Clear 2 HP per turn (if not in sunlight/running water)</li>
+                        <li><strong>Spider Climb:</strong> Can climb any surface including ceilings</li>
+                        <li><strong>Charm (3 Stress):</strong> Dominate minds (Difficulty 19)</li>
+                        <li><strong>Children of the Night (4 Stress):</strong> Summon 2d4 swarms or 3d6 wolves</li>
+                        <li><strong>Bite (2 Stress):</strong> 3d8+6 magic damage, clears HP equal to damage</li>
+                        <li><strong>Move Like Shadow (2 Stress):</strong> Teleport in dim light/darkness</li>
                     </ul>
                     
-                    <h4>Weaknesses</h4>
+                    <h4 style="margin-top: 0.75rem;">Weaknesses</h4>
                     <ul style="font-size: 0.875rem;">
                         <li>Cannot enter homes without invitation</li>
-                        <li>True sunlight stops regeneration</li>
-                        <li>Stake through heart destroys permanently</li>
+                        <li>Takes 3 Stress per round in sunlight</li>
+                        <li>Takes 2 Stress per round in running water</li>
+                        <li>Stake through heart while at 0 HP destroys permanently</li>
                     </ul>
                 </div>
-                
-                <h3>Common Adversaries</h3>
+
+                <!-- BABA LYSAGA -->
+                <div class="card-lg">
+                    <h4 style="color: #f87171; font-size: 1.25rem; margin: 0 0 0.5rem 0;">Baba Lysaga - Solo</h4>
+                    <p style="font-style: italic; color: #9ca3af; margin-bottom: 0.75rem;">Ancient witch and Strahd's self-proclaimed "true mother." Commands swarms and dark magic.</p>
+                    
+                    <div class="stat-grid">
+                        <div class="stat-box"><span class="stat-label">Difficulty</span><p class="stat-value">19</p></div>
+                        <div class="stat-box"><span class="stat-label">Thresholds</span><p class="stat-value">14/28</p></div>
+                        <div class="stat-box"><span class="stat-label">HP</span><p class="stat-value">7</p></div>
+                        <div class="stat-box"><span class="stat-label">Stress</span><p class="stat-value">7</p></div>
+                        <div class="stat-box"><span class="stat-label">Attack</span><p class="stat-value">+4</p></div>
+                    </div>
+                    
+                    <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Attack:</strong> Spinestaff Strike (2d8+6 magic)</p>
+                    
+                    <h4 style="margin-top: 1rem;">Features</h4>
+                    <ul style="font-size: 0.875rem;">
+                        <li><strong>Shapechanger:</strong> Transform into swarm of flies</li>
+                        <li><strong>Summon Swarms (3 Stress):</strong> Call 1d4 insect swarms</li>
+                        <li><strong>Blight Bolt (2 Stress):</strong> 3d8+6 ranged magic attack</li>
+                    </ul>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Tier 3 - Elite Adversaries</h3>
+
+                <!-- RAHADIN -->
+                <div class="card">
+                    <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Rahadin - Leader</h4>
+                    <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Strahd's chamberlain. Ancient dusk elf warrior surrounded by screams of his victims.</p>
+                    <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 17 | Thresholds 10/20 | HP 6 | Stress 6 | Attack +4</p>
+                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Scimitar Flurry (2d8+5 physical, 3 attacks/turn)</p>
+                    <p style="font-size: 0.875rem;"><strong>Features:</strong> Screams of the Dead (enemies mark Stress), Perfect Warrior (+3 Difficulty reaction for 1 Stress)</p>
+                </div>
+
+                <!-- EZMERELDA D'AVENIR -->
+                <div class="card">
+                    <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Ezmerelda d'Avenir - Standard/Social</h4>
+                    <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Young vampire hunter and Van Richten's former student. Skilled with blade and spell.</p>
+                    <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16 | Thresholds 9/18 | HP 5 | Stress 5 | Attack +3</p>
+                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Rapier Strike (1d10+5 physical)</p>
+                    <p style="font-size: 0.875rem;"><strong>Features:</strong> Vampire Hunter (advantage vs undead, +1d8 vs vampires)</p>
+                </div>
+
+                <!-- NIGHT HAGS -->
+                <div class="card">
+                    <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Night Hags - Support</h4>
+                    <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Hideous crones with blue-gray skin and iron teeth who corrupt souls and feed on nightmares.</p>
+                    <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16 | Thresholds 9/18 | HP 6 | Stress 5 | Attack +2</p>
+                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Claws (2d8+3 magic)</p>
+                    <p style="font-size: 0.875rem;"><strong>Features:</strong> Magic Resistance, Etherealness (2 Stress), Nightmare Haunting (3 Stress), Hag Coven (shared magic)</p>
+                </div>
+
+                <!-- TREE BLIGHT -->
+                <div class="card">
+                    <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Tree Blight - Solo</h4>
+                    <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">A 30-foot-tall animated dead tree with blood for sap. Crushes and feeds on living creatures.</p>
+                    <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16 | Thresholds 12/24 | HP 8 | Stress 4 | Attack +4</p>
+                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Branch (3d6+6 physical, Very Close) or Bite (3d8+6 physical, Melee, grappled targets only)</p>
+                    <p style="font-size: 0.875rem;"><strong>Features:</strong> Grasping Roots (grapple, Strength Difficulty 16 to escape), False Appearance, Siege Monster, Fire Resistance</p>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Tier 2 - Standard Adversaries</h3>
+
                 <div class="grid grid-2">
+                    <!-- VAMPIRE SPAWN -->
                     <div class="card">
-                        <h4>Vampire Spawn (Tier 2)</h4>
-                        <p style="font-size: 0.875rem;">Lesser vampires serving Strahd.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14, HP 4, Attack +3</p>
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Vampire Spawn - Standard</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Pale, gaunt undead servants of Strahd with extended fangs.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14 | Thresholds 7/14 | HP 5 | Stress 4 | Attack +3</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Claws (2d6+4 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Regeneration (1 HP/turn), Spider Climb, Bite (2 Stress, 2d6+3 magic), Vampire Weaknesses</p>
                     </div>
+
+                    <!-- WEREWOLVES -->
                     <div class="card">
-                        <h4>Werewolves (Tier 2)</h4>
-                        <p style="font-size: 0.875rem;">Shapeshifting hunters with pack tactics.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14, HP 5, Attack +3</p>
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Werewolves - Bruiser</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Savage wolf-human hybrids who hunt in packs.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14 | Thresholds 8/16 | HP 5 | Stress 4 | Attack +3</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Bite (2d8+4 physical, may inflict lycanthropy)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Shapechanger, Damage Resistance (non-magical/non-silver), Pack Tactics, Keen Senses</p>
                     </div>
+
+                    <!-- REVENANTS -->
                     <div class="card">
-                        <h4>Night Hags (Tier 3)</h4>
-                        <p style="font-size: 0.875rem;">Hideous crones at Old Bonegrinder.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16, HP 5</p>
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Revenants - Standard</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Undead knights of the Order of the Silver Dragon, bound by vengeance.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14 | Thresholds 8/16 | HP 6 | Stress 5 | Attack +3</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Longsword (2d10+4 physical, two-handed)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Regeneration (1 HP/turn), Rejuvenation (reforms after 24 hours), Vengeful Tracker, Turn Immunity</p>
                     </div>
+
+                    <!-- GHOSTS -->
                     <div class="card">
-                        <h4>Dire Wolves (Tier 1)</h4>
-                        <p style="font-size: 0.875rem;">Enormous wolves serving Strahd.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13, HP 4, Attack +3</p>
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Ghosts - Standard</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Spirits of those who died in Barovia, unable to find rest.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13 | Thresholds 6/12 | HP 5 | Stress 4 | Attack +2</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Withering Touch (2d8+3 magic)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Ethereal, Horrifying Visage (2 Stress, ages target), Possession (3 Stress), Incorporeal Movement</p>
                     </div>
+
+                    <!-- ANIMATED ARMOR -->
                     <div class="card">
-                        <h4>Strahd Zombies (Tier 1 Horde)</h4>
-                        <p style="font-size: 0.875rem;">Shambling undead guards in groups.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 11, HP 1 each, Attack +1</p>
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Animated Armor - Standard</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Strahd's enchanted burgundy plate armor guards.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 15 | Thresholds 8/16 | HP 5 | Stress 3 | Attack +3</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Greatsword (2d6+3 physical + 1d6 lightning)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Lightning Absorption, Shocking Bolt, Antimagic Susceptibility, False Appearance</p>
                     </div>
+
+                    <!-- SCARECROWS -->
                     <div class="card">
-                        <h4>Wereravens (Tier 1-2)</h4>
-                        <p style="font-size: 0.875rem;">Keepers of the Feather, allies to PCs.</p>
-                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13, HP 3, Attack +2</p>
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Scarecrows - Standard</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Animated scarecrows created by Baba Lysaga, stuffed with dead ravens.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 14 | Thresholds 6/12 | HP 4 | Stress 3 | Attack +2</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Claw (2d6+3 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Terrifying Glare (2 Stress), Bound by Evil, False Appearance</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Tier 1-2 - Social NPCs</h3>
+
+                <div class="grid grid-2">
+                    <!-- IREENA KOLYANA -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Ireena Kolyana - Social</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Reincarnation of Tatyana with auburn hair and determined eyes.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 12 | Thresholds 4/8 | HP 4 | Stress 3 | Attack +1</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Desperate Defense (1d8+2 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Tatyana's Soul (connection to Ravenloft), Bite Marks (advantage vs fear from undead), Iron Will (reroll Charm 1x/session)</p>
+                    </div>
+
+                    <!-- MADAM EVA -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Madam Eva - Social</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Ancient Vistana fortune-teller with penetrating eyes and knowing smile.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 15 | Thresholds 6/12 | HP 5 | Stress 4 | Attack +0</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Staff Strike (1d6+1 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Ageless, Fortune Telling (tarokka reading), Evil Eye (2 Stress), Curse (3 Stress), Vistani Insight, Protected by Fate</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Tier 1 - Common Adversaries</h3>
+
+                <div class="grid grid-2">
+                    <!-- WERERAVENS -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Wereravens - Standard (Allies)</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Keepers of the Feather who oppose Strahd. Can shift to raven form.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13 | Thresholds 5/10 | HP 4 | Stress 3 | Attack +2</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Beak (1d4+2) or Shortsword (1d6+2) or Hand Crossbow (1d6+2)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Shapechanger, Mimicry, Damage Resistance, Messenger Network, Flock Tactics (1 Stress)</p>
+                    </div>
+
+                    <!-- DIRE WOLVES -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Dire Wolves - Standard</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Enormous wolves with shaggy black fur and glowing red eyes.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13 | Thresholds 6/12 | HP 4 | Stress 3 | Attack +3</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Bite (2d6+4 physical, knocks Prone on Major)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Pack Tactics, Keen Hearing and Smell, Pounce, Relentless Tracker</p>
+                    </div>
+
+                    <!-- NEEDLE BLIGHTS -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Needle Blights - Standard</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Plant creatures covered in needle-like thorns.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 12 | Thresholds 4/8 | HP 3 | Stress 2 | Attack +1</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Claws (1d8+2 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> False Appearance, Needle Spray (2 Stress, attacks all within Very Close range)</p>
+                    </div>
+
+                    <!-- VISTANI BANDITS -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Vistani Bandits - Standard</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Evil Vistani who serve Strahd and prey on travelers.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 12 | Thresholds 5/10 | HP 3 | Stress 3 | Attack +2</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Scimitar (1d6+2 physical) or Dagger (1d4+2 physical, thrown)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Vistani Curse (3 Stress, disadvantage effect), Evil Eye (2 Stress), Treacherous (advantage on deception)</p>
+                    </div>
+
+                    <!-- BAROVIAN COMMONERS -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Barovian Commoners - Social</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Terrified peasants broken by generations of Strahd's rule.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 10 | Thresholds 3/6 | HP 3 | Stress 2 | Attack +0</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Club or Tool (1d4+1 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Terrified (disadvantage when Frightened), Broken Spirit (Presence Difficulty 14+ to help), Local Knowledge</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Tier 1 - Hordes & Minions</h3>
+
+                <div class="grid grid-2">
+                    <!-- STRAHD ZOMBIES -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Strahd Zombies - Horde</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Shambling corpses of ancient Barovian guards (2d4+2 zombies).</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 11 | Thresholds 3/6 | HP 1 per zombie | Stress 2 | Attack +1</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Rotting Slam (1d8+2 physical per zombie)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Horde (one zombie dies per Major damage), Loathsome Limbs, Undead Fortitude</p>
+                    </div>
+
+                    <!-- TWIG BLIGHTS -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Twig Blights - Minion</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Small animated bundles of twigs that swarm enemies.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 10 | No Thresholds | HP 1 | Stress 1 | Attack -1</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Claws (1d4+1 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Minion (4) - defeated by any damage, Group Attack (spend Fear to coordinate), False Appearance</p>
+                    </div>
+
+                    <!-- SWARMS OF BATS -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Swarms of Bats - Horde</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Hundreds of shrieking bats serving as Strahd's spies.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 12 | Thresholds 4/8 | HP 3 | Stress 2 | Attack +1</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Biting Cloud (2d6+2 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Swarm (occupies same space), Echolocation, Strahd's Spies, Obscuring Cloud (1 Stress, heavily obscured)</p>
+                    </div>
+
+                    <!-- SWARMS OF RAVENS -->
+                    <div class="card">
+                        <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Swarms of Ravens - Horde (Allies)</h4>
+                        <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Hundreds of ravens that aid those who oppose Strahd.</p>
+                        <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 11 | Thresholds 4/8 | HP 3 | Stress 2 | Attack +0</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Pecking Frenzy (2d4+2 physical)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Swarm (occupies same space), Helpful Ravens (aid party attacks), Warning Cries (advantage on surprise/detection)</p>
                     </div>
                 </div>
             </div>
