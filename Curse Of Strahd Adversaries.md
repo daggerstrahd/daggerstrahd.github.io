@@ -36,7 +36,7 @@ The ancient vampire lord of Barovia, a tragic figure of immense power and cunnin
 
 **Motives & Tactics:** Control, possess Ireena Kolyana, test worthy opponents, dominate through charm and terror, retreat when truly threatened, use the castle to his advantage
 
-**Difficulty:** 20 | **Thresholds:** 15/30 | **HP:** 8 | **Stress:** 8  
+**Difficulty:** 20 | **Thresholds:** 15/30 | **HP:** 8 | **Stress:** 6  
 **Attack Modifier:** +5
 
 **Standard Attack**  
@@ -116,7 +116,7 @@ A striking young woman with auburn hair and determined eyes. She wears simple bu
 
 **Motives & Tactics:** Survival, protect herself from Strahd, help her people, discover her true identity
 
-**Difficulty:** 12 | **Thresholds:** 4/8 | **HP:** 3 | **Stress:** 4  
+**Difficulty:** 12 | **Thresholds:** 4/8 | **HP:** 4 | **Stress:** 3
 **Attack Modifier:** +1
 
 **Standard Attack**  
@@ -157,7 +157,7 @@ An elderly Vistana woman with penetrating eyes and a knowing smile. She wears co
 
 **Motives & Tactics:** Guide the PCs toward their destiny, read fortunes, maintain balance, protect the Vistani, serve her own mysterious agenda
 
-**Difficulty:** 15 | **Thresholds:** 6/12 | **HP:** 4 | **Stress:** 5  
+**Difficulty:** 15 | **Thresholds:** 6/12 | **HP:** 5 | **Stress:** 4  
 **Attack Modifier:** +0
 
 **Standard Attack**  
@@ -205,7 +205,7 @@ A dusk elf with dusky brown skin, long black hair, and cold, merciless eyes. He 
 
 **Motives & Tactics:** Serve Strahd absolutely, eliminate threats to his master, command lesser servants, fight with deadly precision
 
-**Difficulty:** 17 | **Thresholds:** 10/20 | **HP:** 6 | **Stress:** 6  
+**Difficulty:** 17 | **Thresholds:** 10/20 | **HP:** 6 | **Stress:** 4  
 **Attack Modifier:** +4
 
 **Standard Attack**  
@@ -249,7 +249,7 @@ Pale, gaunt humanoids with extended fangs and bloodshot eyes. Former adventurers
 
 **Motives & Tactics:** Obey Strahd, hunt prey, feed on the living, protect their master
 
-**Difficulty:** 14 | **Thresholds:** 7/14 | **HP:** 4 | **Stress:** 4  
+**Difficulty:** 14 | **Thresholds:** 7/14 | **HP:** 5 | **Stress:** 4  
 **Attack Modifier:** +3
 
 **Standard Attack**  
@@ -351,7 +351,7 @@ Hideous crones with blue-gray skin, iron teeth, and terrible claws. They corrupt
 
 **Motives & Tactics:** Corrupt mortals, trade in souls, bake dream pastries, work with their coven
 
-**Difficulty:** 16 | **Thresholds:** 9/18 | **HP:** 5 | **Stress:** 6  
+**Difficulty:** 16 | **Thresholds:** 9/18 | **HP:** 6 | **Stress:** 5  
 **Attack Modifier:** +2
 
 **Standard Attack**  
@@ -386,7 +386,7 @@ Members of the Keepers of the Feather, a secret society opposing Strahd. They ap
 
 **Motives & Tactics:** Spy on Strahd, help heroes, protect the innocent, gather information
 
-**Difficulty:** 13 | **Thresholds:** 5/10 | **HP:** 3 | **Stress:** 3  
+**Difficulty:** 13 | **Thresholds:** 5/10 | **HP:** 4 | **Stress:** 3  
 **Attack Modifier:** +2
 
 **Standard Attack**  
@@ -555,7 +555,7 @@ Terrified peasants of Barovia, broken by generations of Strahd's rule.
 
 **Motives & Tactics:** Survive, avoid Strahd's attention, protect their families
 
-**Difficulty:** 10 | **Thresholds:** 3/6 | **HP:** 2 | **Stress:** 4  
+**Difficulty:** 10 | **Thresholds:** 3/6 | **HP:** 3 | **Stress:** 2  
 **Attack Modifier:** +0
 
 **Standard Attack**  
@@ -698,7 +698,7 @@ Undead knights of the Order of the Silver Dragon, bound by vengeance and oath.
 
 **Motives & Tactics:** Destroy Strahd's minions, seek vengeance, fulfill their oath
 
-**Difficulty:** 14 | **Thresholds:** 8/16 | **HP:** 5 | **Stress:** 6  
+**Difficulty:** 14 | **Thresholds:** 8/16 | **HP:** 6 | **Stress:** 5
 **Attack Modifier:** +3
 
 **Standard Attack**  
@@ -734,7 +734,7 @@ Spirits of those who died in Barovia, unable to find rest.
 
 **Motives & Tactics:** Haunt the living, relive their death, possess hosts
 
-**Difficulty:** 13 | **Thresholds:** 6/12 | **HP:** 4 | **Stress:** 5  
+**Difficulty:** 13 | **Thresholds:** 6/12 | **HP:** 5 | **Stress:** 4
 **Attack Modifier:** +2
 
 **Standard Attack**  
