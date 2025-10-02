@@ -19,9 +19,6 @@
         .header-subtitle { font-size: 1.25rem; color: #fca5a5; font-style: italic; }
         
         .nav-container { 
-            position: sticky; 
-            top: 0; 
-            z-index: 100; 
             background-color: #111827; 
             padding: 1rem 0; 
             margin-bottom: 2rem; 
@@ -75,6 +72,57 @@
         .stat-value { color: #f87171; font-weight: bold; }
         
         .footer { margin-top: 2rem; text-align: center; color: #6b7280; font-size: 0.875rem; border-top: 1px solid #7f1d1d; padding-top: 1.5rem; }
+        
+        /* Go to Top Button */
+        .go-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #7f1d1d;
+            color: #fef2f2;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+            border: 2px solid #991b1b;
+        }
+        
+        .go-to-top:hover {
+            background-color: #991b1b;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+        }
+        
+        .go-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .go-to-top svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .go-to-top {
+                bottom: 1.5rem;
+                right: 1.5rem;
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+            .go-to-top svg {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1388,6 +1436,13 @@
             <p>Converted to Daggerheart System</p>
             <p>For questions or adjustment, please create an issues at <a href="https://github.com/daggerstrahd/daggerstrahd.github.io/issues">Curse Of Strahd GitHub Repository</a></p>
         </div>
+        
+        <!-- Go to Top Button -->
+        <button class="go-to-top" id="goToTopBtn" aria-label="Go to top">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+        </button>
     </div>
 
     <script>
@@ -1404,7 +1459,25 @@
                     
                     contents.forEach(c => c.classList.remove('active'));
                     document.getElementById('tab-' + target).classList.add('active');
+                    
+                    // Scroll to top when changing tabs
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 });
+            });
+            
+            // Go to Top button functionality
+            const goToTopBtn = document.getElementById('goToTopBtn');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    goToTopBtn.classList.add('visible');
+                } else {
+                    goToTopBtn.classList.remove('visible');
+                }
+            });
+            
+            goToTopBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         });
     </script>
