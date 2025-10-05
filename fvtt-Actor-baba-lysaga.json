@@ -1,0 +1,252 @@
+{
+  "name": "Baba Lysaga",
+  "type": "adversary",
+  "img": "assets/baba-lysaga.jpg",
+  "system": {
+    "description": "<p>Ancient witch and Strahd's self-proclaimed \"true mother.\" Commands swarms and dark magic.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "support",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 32
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Spinestaff Strike",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 4
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d8",
+              "bonus": 6
+            },
+            "type": [
+              "magical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Shapechanger",
+      "type": "feature",
+      "system": {
+        "description": "<p>Transform into swarm of flies</p>",
+        "actions": {
+          "transform": {
+            "type": "effect",
+            "name": "Transform to Flies",
+            "actionType": "action",
+            "range": "self",
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "consumeOnSuccess": false
+            },
+            "_id": "4515ffcc78cce677",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "e9269cecded73edd",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Summon Swarms",
+      "type": "feature",
+      "system": {
+        "description": "<p>Call 1d4 insect swarms to fight for you</p>",
+        "actions": {
+          "summon": {
+            "type": "summon",
+            "name": "Summon Swarms",
+            "actionType": "action",
+            "range": "close",
+            "cost": [
+              {
+                "key": "stress",
+                "value": 3,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "consumeOnSuccess": false
+            },
+            "_id": "f152461f626785ad",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "dc2a298c3457d608",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Blight Bolt",
+      "type": "feature",
+      "system": {
+        "description": "<p>Ranged magic attack</p>",
+        "actions": {
+          "attack": {
+            "type": "attack",
+            "name": "Blight Bolt",
+            "actionType": "action",
+            "range": "far",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 3,
+                    "dice": "d8",
+                    "bonus": 6
+                  },
+                  "type": [
+                    "magical"
+                  ]
+                }
+              ]
+            },
+            "_id": "49ef6ad18287ade5",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "7e2cb774f7d08d64",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Baba Lysaga",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/baba-lysaga.jpg"
+    }
+  }
+}

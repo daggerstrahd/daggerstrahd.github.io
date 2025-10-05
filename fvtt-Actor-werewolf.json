@@ -1,0 +1,271 @@
+{
+  "name": "Werewolf",
+  "type": "adversary",
+  "img": "assets/werewolf.jpg",
+  "system": {
+    "description": "<p>Savage wolf-human hybrid who hunts in packs.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": true,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 2,
+    "type": "bruiser",
+    "difficulty": 13,
+    "damageThresholds": {
+      "major": 12,
+      "severe": 22
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Bite",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 3
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 2,
+              "dice": "d10",
+              "bonus": 5
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      },
+      "description": "May inflict lycanthropy curse"
+    }
+  },
+  "items": [
+    {
+      "name": "Shapechanger",
+      "type": "feature",
+      "system": {
+        "description": "<p>Transform between human, wolf, and hybrid forms</p>",
+        "actions": {
+          "transform": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "self",
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "_id": "8e730d5e64413fbd",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "8b8deb956924b9e7",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Damage Resistance",
+      "type": "feature",
+      "system": {
+        "description": "<p>Resistant to non-magical, non-silver weapons. Reduce physical damage by half.</p>",
+        "actions": {
+          "resistance": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "c3c530d8da538617",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "04d9c6434b4025d6",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Pack Tactics",
+      "type": "feature",
+      "system": {
+        "description": "<p>Advantage on attacks when an ally is adjacent to the target</p>",
+        "actions": {
+          "pack": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "b94a8cea32c82141",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "43864b6ae0ef87b6",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Keen Senses",
+      "type": "feature",
+      "system": {
+        "description": "<p>Advantage on perception checks involving hearing or smell</p>",
+        "actions": {
+          "senses": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "37f8cc58f223fa4e",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "1fffbfbb387f6132",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Lycanthropy Curse",
+      "type": "feature",
+      "system": {
+        "description": "<p>Humanoids bitten must make Instinct roll (Difficulty 14) or contract lycanthropy curse</p>",
+        "actions": {
+          "curse": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "melee",
+            "_id": "c4a68d760da7e28d",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "16534106c4beb157",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Werewolf",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/werewolf.jpg"
+    }
+  }
+}

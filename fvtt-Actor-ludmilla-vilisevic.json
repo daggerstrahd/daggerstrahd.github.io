@@ -1,0 +1,390 @@
+{
+  "name": "Ludmilla Vilisevic",
+  "type": "adversary",
+  "img": "assets/ludmilla.jpg",
+  "system": {
+    "description": "<p>One of Strahd's three brides. Elite vampire spawn with magical abilities.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "standard",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 30
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Claws",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 4
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d8",
+              "bonus": 5
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Regeneration",
+      "type": "feature",
+      "system": {
+        "description": "<p>Clear 3 HP per turn (not in sunlight/running water)</p>",
+        "actions": {
+          "regen": {
+            "type": "effect",
+            "name": "Regeneration",
+            "actionType": "passive",
+            "range": "self",
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "_id": "5fa91f27053be049",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "d2a6280d43286ed5",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Spider Climb",
+      "type": "feature",
+      "system": {
+        "description": "<p>Climb any surface without rolls</p>",
+        "actions": {
+          "climb": {
+            "type": "effect",
+            "name": "Spider Climb",
+            "actionType": "passive",
+            "range": "self",
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "_id": "5dae2e8bbda1456c",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "7b00374d85b45f94",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "feature",
+      "system": {
+        "description": "<p>Vampiric bite that heals the vampire</p>",
+        "actions": {
+          "bite": {
+            "type": "attack",
+            "name": "Bite",
+            "actionType": "action",
+            "range": "melee",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 3,
+                    "dice": "d8",
+                    "bonus": 5
+                  },
+                  "type": [
+                    "magical"
+                  ]
+                }
+              ]
+            },
+            "description": "Clears HP equal to damage dealt",
+            "_id": "db16c6a82bc23b5a",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "ba110843c8cce31b",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Vampire Weaknesses",
+      "type": "feature",
+      "system": {
+        "description": "<p>Cannot enter homes uninvited. Sunlight and running water deal severe damage.</p>",
+        "actions": {
+          "weakness": {
+            "type": "effect",
+            "name": "Vampire Weaknesses",
+            "actionType": "passive",
+            "range": "self",
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "_id": "32edaa9546b4788b",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "a3492462b9beffb5",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Blast of Flame",
+      "type": "feature",
+      "system": {
+        "description": "<p>Ludmilla's signature spell - a blast of magical fire</p>",
+        "actions": {
+          "spell": {
+            "type": "attack",
+            "name": "Blast of Flame",
+            "actionType": "action",
+            "range": "far",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 3,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 3,
+                    "dice": "d6",
+                    "bonus": 4
+                  },
+                  "type": [
+                    "magical"
+                  ]
+                }
+              ]
+            },
+            "_id": "7bb0027d90f2f86b",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "56c68e06a2146e85",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Misty Step",
+      "type": "feature",
+      "system": {
+        "description": "<p>Teleport up to close range</p>",
+        "actions": {
+          "teleport": {
+            "type": "effect",
+            "name": "Misty Step",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 1,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "_id": "c4542c936d5b9e34",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "397b0e35139b99f5",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Ludmilla Vilisevic",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/ludmilla.jpg"
+    }
+  }
+}

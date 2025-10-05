@@ -1,0 +1,810 @@
+{
+  "folder": "yvnnf6zgqnS4AXkA",
+  "name": "Strahd von Zarovich",
+  "type": "adversary",
+  "img": "assets/600px-Strahd.jpg",
+  "system": {
+    "description": "",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "solo",
+    "notes": "",
+    "difficulty": 17,
+    "hordeHp": 1,
+    "damageThresholds": {
+      "major": 25,
+      "severe": 42
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 7,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Attack",
+      "img": "icons/skills/wounds/bone-broken-tooth-fang-red.webp",
+      "_id": "SkYxgYJIz31i4ONY",
+      "systemPath": "attack",
+      "chatDisplay": false,
+      "type": "attack",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "type": "attack",
+        "trait": null,
+        "difficulty": null,
+        "bonus": 5,
+        "advState": "neutral",
+        "diceRolling": {
+          "multiplier": "prof",
+          "flatMultiplier": 1,
+          "dice": "d6",
+          "compare": null,
+          "treshold": null
+        },
+        "useDefault": false
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "flatMultiplier": 3,
+              "dice": "d10",
+              "bonus": 8,
+              "multiplier": "flat"
+            },
+            "applyTo": "hitPoints",
+            "type": [
+              "magical"
+            ],
+            "resultBased": false,
+            "valueAlt": {
+              "multiplier": "prof",
+              "flatMultiplier": 1,
+              "dice": "d6",
+              "bonus": null,
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              }
+            },
+            "base": false
+          }
+        ],
+        "includeBase": false
+      },
+      "description": "",
+      "actionType": "action",
+      "cost": [],
+      "uses": {
+        "value": null,
+        "max": null,
+        "recovery": null,
+        "consumeOnSuccess": false
+      },
+      "effects": [],
+      "save": {
+        "trait": null,
+        "difficulty": null,
+        "damageMod": "none"
+      }
+    },
+    "experiences": {},
+    "bonuses": {
+      "roll": {
+        "attack": {
+          "bonus": 0,
+          "dice": []
+        },
+        "action": {
+          "bonus": 0,
+          "dice": []
+        },
+        "reaction": {
+          "bonus": 0,
+          "dice": []
+        }
+      },
+      "damage": {
+        "physical": {
+          "bonus": 0,
+          "dice": []
+        },
+        "magical": {
+          "bonus": 0,
+          "dice": []
+        }
+      }
+    },
+    "motivesAndTactics": ""
+  },
+  "prototypeToken": {
+    "name": "Strahd von Zarovich",
+    "displayName": 0,
+    "actorLink": false,
+    "width": 1,
+    "height": 1,
+    "texture": {
+      "src": "assets/600px-Strahd.jpg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "offsetX": 0,
+      "offsetY": 0,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "rotation": 0,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": -1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "resources.hitPoints"
+    },
+    "bar2": {
+      "attribute": "resources.stress"
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Shapechanger",
+      "type": "feature",
+      "system": {
+        "description": "",
+        "resource": null,
+        "actions": {
+          "FQ2BfAb442F4lWSt": {
+            "type": "effect",
+            "_id": "FQ2BfAb442F4lWSt",
+            "systemPath": "actions",
+            "description": "<p>Transforms into a Mist.</p>",
+            "chatDisplay": true,
+            "actionType": "action",
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "effects": [
+              {
+                "_id": "pmLDTTypo0ZhpsZS",
+                "onSave": false
+              }
+            ],
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "name": "Transform",
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "range": "self"
+          }
+        },
+        "originItemType": null,
+        "multiclassOrigin": false
+      },
+      "_id": "JuyyCxAykdqGvRF2",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "effects": [
+        {
+          "name": "Shapechanger",
+          "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+          "origin": "Actor.eutoKP00UTlst7Ny.Item.JuyyCxAykdqGvRF2",
+          "transfer": false,
+          "_id": "pmLDTTypo0ZhpsZS",
+          "type": "base",
+          "system": {
+            "rangeDependence": {
+              "enabled": false,
+              "type": "withinRange",
+              "target": "friendly",
+              "range": "self"
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "combat": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "description": "",
+          "tint": "#ffffff",
+          "statuses": [],
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.350",
+            "systemId": "daggerheart",
+            "systemVersion": "1.1.2",
+            "createdTime": 1759501425462,
+            "modifiedTime": 1759589287274,
+            "lastModifiedBy": "OfFZHxMxHqaBhX14"
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2",
+        "createdTime": 1759501302778,
+        "modifiedTime": 1759589205894,
+        "lastModifiedBy": "OfFZHxMxHqaBhX14"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Legendary Resistance",
+      "type": "feature",
+      "system": {
+        "description": "<p>Ignore any damage or effect 3 times / session.</p>",
+        "resource": null,
+        "actions": {
+          "CzlBzpqx45fAw9GS": {
+            "type": "effect",
+            "_id": "CzlBzpqx45fAw9GS",
+            "systemPath": "actions",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "passive",
+            "cost": [],
+            "uses": {
+              "value": 0,
+              "max": "3",
+              "recovery": "session",
+              "consumeOnSuccess": false
+            },
+            "effects": [
+              {
+                "_id": "gzct4NqbBlkQ7BJn",
+                "onSave": false
+              }
+            ],
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "name": "Legendary Resistance",
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "range": "self"
+          }
+        },
+        "originItemType": null,
+        "multiclassOrigin": false
+      },
+      "_id": "Ol1s3i9NkZcUBlvb",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "effects": [
+        {
+          "name": "Legendary Resistance",
+          "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+          "origin": "Actor.eutoKP00UTlst7Ny.Item.Ol1s3i9NkZcUBlvb",
+          "transfer": false,
+          "_id": "gzct4NqbBlkQ7BJn",
+          "type": "base",
+          "system": {
+            "rangeDependence": {
+              "enabled": false,
+              "type": "withinRange",
+              "target": "friendly",
+              "range": "self"
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "combat": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "description": "",
+          "tint": "#ffffff",
+          "statuses": [],
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.350",
+            "systemId": "daggerheart",
+            "systemVersion": "1.1.2",
+            "createdTime": 1759589785153,
+            "modifiedTime": 1759589800270,
+            "lastModifiedBy": "OfFZHxMxHqaBhX14"
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2",
+        "createdTime": 1759501470957,
+        "modifiedTime": 1759589785171,
+        "lastModifiedBy": "OfFZHxMxHqaBhX14"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Creepy Crawler",
+      "type": "feature",
+      "system": {
+        "description": "<p><span style=\"color:rgb(209, 213, 219);font-family:system-ui, -apple-system, sans-serif;font-size:14px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(17, 24, 39);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;display:inline !important;float:none\">Can climb any surface including ceilings</span></p>",
+        "resource": null,
+        "actions": {
+          "X3QcR3WF7CisCcsQ": {
+            "type": "effect",
+            "_id": "X3QcR3WF7CisCcsQ",
+            "systemPath": "actions",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "cost": [],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "effects": [
+              {
+                "_id": "drJjR3Y8kpllwG70",
+                "onSave": false
+              }
+            ],
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "name": "Creepy crawler",
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "range": "self"
+          }
+        },
+        "originItemType": null,
+        "multiclassOrigin": false
+      },
+      "_id": "uZOmggP0ytfUVKYH",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "effects": [
+        {
+          "name": "Feature",
+          "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+          "origin": "Actor.eutoKP00UTlst7Ny.Item.uZOmggP0ytfUVKYH",
+          "transfer": false,
+          "_id": "drJjR3Y8kpllwG70",
+          "type": "base",
+          "system": {
+            "rangeDependence": {
+              "enabled": false,
+              "type": "withinRange",
+              "target": "hostile",
+              "range": "melee"
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "combat": null
+          },
+          "description": "",
+          "tint": "#ffffff",
+          "statuses": [],
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.350",
+            "systemId": "daggerheart",
+            "systemVersion": "1.1.2",
+            "createdTime": 1759589843841,
+            "modifiedTime": 1759589843841,
+            "lastModifiedBy": "OfFZHxMxHqaBhX14"
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2",
+        "createdTime": 1759589823220,
+        "modifiedTime": 1759589904067,
+        "lastModifiedBy": "OfFZHxMxHqaBhX14"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Charm",
+      "type": "feature",
+      "system": {
+        "description": "<p><span style=\"color:rgb(209, 213, 219);font-family:system-ui, -apple-system, sans-serif;font-size:14px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(17, 24, 39);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;display:inline !important;float:none\">Dominate minds (Difficulty 17, Presence + Instinct to resist)</span></p>",
+        "resource": null,
+        "actions": {
+          "hlqsNe65XZW1pGGL": {
+            "type": "effect",
+            "_id": "hlqsNe65XZW1pGGL",
+            "systemPath": "actions",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 3,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "effects": [
+              {
+                "_id": "3g8R3kXRqqLGnp3K",
+                "onSave": false
+              }
+            ],
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "name": "Charm",
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "range": "close"
+          }
+        },
+        "originItemType": null,
+        "multiclassOrigin": false
+      },
+      "_id": "u3uCqr07tUDJN6ht",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "effects": [
+        {
+          "name": "Feature",
+          "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+          "origin": "Actor.eutoKP00UTlst7Ny.Item.u3uCqr07tUDJN6ht",
+          "transfer": false,
+          "_id": "3g8R3kXRqqLGnp3K",
+          "type": "base",
+          "system": {
+            "rangeDependence": {
+              "enabled": false,
+              "type": "withinRange",
+              "target": "hostile",
+              "range": "melee"
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "combat": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "description": "<p>The target <strong>humanoid </strong>is charmed. It will trust Strahd and lets themselves get bitten. If Strahd harms the person, they can redo the saving throw.</p>",
+          "tint": "#ffffff",
+          "statuses": [
+            "curse"
+          ],
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.350",
+            "systemId": "daggerheart",
+            "systemVersion": "1.1.2",
+            "createdTime": 1759589984119,
+            "modifiedTime": 1759590173565,
+            "lastModifiedBy": "OfFZHxMxHqaBhX14"
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2",
+        "createdTime": 1759589913576,
+        "modifiedTime": 1759590861526,
+        "lastModifiedBy": "OfFZHxMxHqaBhX14"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Shadow Stepper",
+      "type": "feature",
+      "system": {
+        "description": "<p><span class=\"Apple-converted-space\"> </span>You can move from shadow to shadow.</p><p class=\"p1\">When you move into an area of darkness or a shadow cast</p><p class=\"p1\">by another creature or object, you can mark a Stress to</p><p class=\"p1\">disappear from where you are and reappear inside another</p><p class=\"p1\">shadow within Far range. When you reappear, you are Cloaked.</p>",
+        "resource": null,
+        "actions": {
+          "dzJfz7vKWLtkgJgC": {
+            "type": "effect",
+            "_id": "dzJfz7vKWLtkgJgC",
+            "systemPath": "actions",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 1,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": null,
+              "max": "",
+              "recovery": null,
+              "consumeOnSuccess": false
+            },
+            "effects": [],
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "name": "Shadow Step",
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "range": "close"
+          }
+        },
+        "originItemType": null,
+        "multiclassOrigin": false
+      },
+      "_id": "W2f8Wy0W3JKodLme",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2",
+        "createdTime": 1759590245671,
+        "modifiedTime": 1759590650877,
+        "lastModifiedBy": "OfFZHxMxHqaBhX14"
+      },
+      "ownership": {
+        "default": 0
+      }
+    },
+    {
+      "name": "Children of the Night",
+      "type": "feature",
+      "system": {
+        "description": "<p><span style=\"color:rgb(209, 213, 219);font-family:system-ui, -apple-system, sans-serif;font-size:14px;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:left;text-indent:0px;text-transform:none;widows:2;word-spacing:0px;-webkit-text-stroke-width:0px;white-space:normal;background-color:rgb(17, 24, 39);text-decoration-thickness:initial;text-decoration-style:initial;text-decoration-color:initial;display:inline !important;float:none\">Summon 2d4 swarms or 3d6 wolves</span></p>",
+        "resource": null,
+        "actions": {
+          "RoaCzhzbtlrJkki1": {
+            "type": "summon",
+            "_id": "RoaCzhzbtlrJkki1",
+            "systemPath": "actions",
+            "description": "",
+            "chatDisplay": true,
+            "actionType": "action",
+            "cost": [
+              {
+                "scalable": false,
+                "key": "stress",
+                "value": 4,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "uses": {
+              "value": 0,
+              "max": "1",
+              "recovery": "session",
+              "consumeOnSuccess": false
+            },
+            "documentUUID": null,
+            "name": "Summon",
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "range": ""
+          }
+        },
+        "originItemType": null,
+        "multiclassOrigin": false
+      },
+      "_id": "Q53N4QRnypgO18LE",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2",
+        "createdTime": 1759590765833,
+        "modifiedTime": 1759590852507,
+        "lastModifiedBy": "OfFZHxMxHqaBhX14"
+      },
+      "ownership": {
+        "default": 0
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "curse-of-strahd",
+      "uuid": "Actor.eutoKP00UTlst7Ny",
+      "coreVersion": "13.350",
+      "systemId": "daggerheart",
+      "systemVersion": "1.1.2"
+    },
+    "coreVersion": "13.348",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2",
+    "createdTime": 1759500779065,
+    "modifiedTime": 1759501299718,
+    "lastModifiedBy": "OfFZHxMxHqaBhX14"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

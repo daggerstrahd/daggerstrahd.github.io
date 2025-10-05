@@ -1,0 +1,259 @@
+{
+  "name": "Vampire Spawn",
+  "type": "adversary",
+  "img": "assets/vampire-spawn.jpg",
+  "system": {
+    "description": "<p>Pale, gaunt undead servants of Strahd with extended fangs.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 2,
+    "type": "standard",
+    "difficulty": 14,
+    "damageThresholds": {
+      "major": 10,
+      "severe": 18
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Claws",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 3
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 2,
+              "dice": "d8",
+              "bonus": 4
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Regeneration",
+      "type": "feature",
+      "system": {
+        "description": "<p>Clear 2 HP per turn (not in sunlight/running water)</p>",
+        "actions": {
+          "regen": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "1a9ad2877c11bba8",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "1168fae6f46431eb",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Spider Climb",
+      "type": "feature",
+      "system": {
+        "description": "<p>Climb any surface without rolls</p>",
+        "actions": {
+          "climb": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "fae1a48caeb28709",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "3d80834153b2ad3b",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "feature",
+      "system": {
+        "description": "<p>Vampiric bite attack</p>",
+        "actions": {
+          "bite": {
+            "type": "attack",
+            "actionType": "action",
+            "range": "melee",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 2,
+                    "dice": "d8",
+                    "bonus": 3
+                  },
+                  "type": [
+                    "magical"
+                  ]
+                }
+              ]
+            },
+            "_id": "cd3f6946ea4d0ff7",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "00f7f7e3ed900d66",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Vampire Weaknesses",
+      "type": "feature",
+      "system": {
+        "description": "<p>Cannot enter homes uninvited. Sunlight and running water deal severe damage. Stake through heart paralyzes. Running water deals 2d6 damage/turn.</p>",
+        "actions": {
+          "weakness": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "d7be0db3073ef7a4",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "035bd1a87ef23874",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Vampire Spawn",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/vampire-spawn.jpg"
+    }
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "name": "Tree Blight",
+  "type": "adversary",
+  "img": "assets/tree-blight.jpg",
+  "system": {
+    "description": "<p>A 30-foot-tall animated dead tree with blood for sap. Crushes and feeds on living creatures.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": true,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "bruiser",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 32
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Branch",
+      "range": "close",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 5
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d10",
+              "bonus": 6
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Bite",
+      "type": "feature",
+      "system": {
+        "description": "<p>Can bite grappled targets for massive damage</p>",
+        "actions": {
+          "bite": {
+            "type": "attack",
+            "actionType": "action",
+            "range": "melee",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 3,
+                    "dice": "d12",
+                    "bonus": 5
+                  },
+                  "type": [
+                    "physical"
+                  ]
+                }
+              ]
+            },
+            "description": "Can only target grappled creatures",
+            "_id": "853e9642bc0f76cf",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "3182b0dd2e1dadfd",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Grasping Roots",
+      "type": "feature",
+      "system": {
+        "description": "<p>Roots burst from ground to grapple enemies. Strength Difficulty 16 to escape.</p>",
+        "actions": {
+          "roots": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "hostile",
+              "amount": 3
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "_id": "bc227dce3dd15d68",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "effects": [
+        {
+          "name": "Grappled",
+          "description": "<p>Target is restrained by roots. Can attempt Strength check (Difficulty 16) to escape.</p>",
+          "statuses": [
+            "restrained"
+          ],
+          "_id": "5be4af9e3f5a5c14",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "changes": [],
+          "duration": {
+            "startTime": null,
+            "combat": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "tint": "#ffffff",
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.350",
+            "systemId": "daggerheart",
+            "systemVersion": "1.1.2"
+          },
+          "system": {
+            "rangeDependence": {
+              "enabled": false,
+              "type": "withinRange",
+              "target": "friendly",
+              "range": "self"
+            }
+          },
+          "origin": "Actor.PLACEHOLDER.Item.9146c5f79119046c224f04ae",
+          "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg"
+        }
+      ],
+      "_id": "e8272a9238425c9e",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "False Appearance",
+      "type": "feature",
+      "system": {
+        "description": "<p>While motionless, indistinguishable from dead tree</p>",
+        "actions": {
+          "appearance": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "d10b07e3f1724e2c",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "f6e83b0ba85ca8b7",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Siege Monster",
+      "type": "feature",
+      "system": {
+        "description": "<p>Deals double damage to objects and structures</p>",
+        "actions": {
+          "siege": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "37c6a7401ed9f6e3",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "1f8ba7c94a70abf2",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Fire Resistance",
+      "type": "feature",
+      "system": {
+        "description": "<p>Takes half damage from fire/heat sources</p>",
+        "actions": {
+          "fireresist": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "97319663f5e3a3d7",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "8b50660ab8b32526",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Tree Blight",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/tree-blight.jpg"
+    }
+  }
+}

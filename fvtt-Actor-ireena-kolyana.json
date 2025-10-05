@@ -1,0 +1,242 @@
+{
+  "name": "Ireena Kolyana",
+  "type": "adversary",
+  "img": "assets/ireena.jpg",
+  "system": {
+    "description": "<p>Reincarnation of Tatyana with auburn hair and determined eyes. Strahd's obsession and key to the campaign.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 1,
+    "type": "social",
+    "difficulty": 12,
+    "damageThresholds": {
+      "major": 6,
+      "severe": 10
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 3,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Desperate Defense",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 1
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 2,
+              "dice": "d6",
+              "bonus": 2
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      },
+      "description": "Rapier - only used when cornered"
+    }
+  },
+  "items": [
+    {
+      "name": "Tatyana's Soul",
+      "type": "feature",
+      "system": {
+        "description": "<p>Ireena is the reincarnation of Strahd's lost love. She has an inexplicable connection to Castle Ravenloft and occasionally experiences flashes of Tatyana's memories.</p>",
+        "actions": {
+          "soul": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "344a6b4475527505",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "bb134151b7bb482a",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Bite Marks",
+      "type": "feature",
+      "system": {
+        "description": "<p>Strahd has bitten Ireena twice. She has advantage on saves against fear effects from undead.</p>",
+        "actions": {
+          "marks": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "372330fd1100eab8",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "736e931113a218c8",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Iron Will",
+      "type": "feature",
+      "system": {
+        "description": "<p>Once per session, Ireena can reroll a failed save against charm or domination effects.</p>",
+        "actions": {
+          "will": {
+            "type": "effect",
+            "actionType": "reaction",
+            "range": "self",
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "uses": {
+              "value": 0,
+              "max": "1",
+              "recovery": "session",
+              "consumeOnSuccess": false
+            },
+            "_id": "f771eca2054e754e",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "daa902f07f9bba87",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Noble Education",
+      "type": "feature",
+      "system": {
+        "description": "<p>Advantage on history and culture knowledge checks about Barovia</p>",
+        "actions": {
+          "education": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "5844cab6cfe14786",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "c18fb22786f71d0c",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Ireena Kolyana",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/ireena.jpg"
+    }
+  }
+}

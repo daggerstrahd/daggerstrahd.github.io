@@ -1,0 +1,267 @@
+{
+  "name": "Dire Wolf",
+  "type": "adversary",
+  "img": "assets/dire-wolf.jpg",
+  "system": {
+    "description": "<p>Enormous wolf with shaggy black fur and glowing red eyes. Strahd's hunters and spies.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 1,
+    "type": "standard",
+    "difficulty": 13,
+    "damageThresholds": {
+      "major": 7,
+      "severe": 11
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 3,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Bite",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 2
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 2,
+              "dice": "d6",
+              "bonus": 3
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      },
+      "description": "Knocks target Prone on Major Hit"
+    }
+  },
+  "items": [
+    {
+      "name": "Pack Tactics",
+      "type": "feature",
+      "system": {
+        "description": "<p>Advantage on attacks when an ally is adjacent to the target</p>",
+        "actions": {
+          "pack": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "49c75f651c6d9a7f",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "41e1d962b740040b",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Keen Hearing and Smell",
+      "type": "feature",
+      "system": {
+        "description": "<p>Advantage on perception checks involving hearing or smell. Can track by scent.</p>",
+        "actions": {
+          "keen": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "ab474d22cbcb6356",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "7b56dbdd836dca3c",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Pounce",
+      "type": "feature",
+      "system": {
+        "description": "<p>If the wolf moves at least close distance toward target before attacking and hits, target must make Strength save (Difficulty 13) or be knocked Prone.</p>",
+        "actions": {
+          "pounce": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "bf2974889ff13246",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "5b6da7e7d1b52289",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Relentless Tracker",
+      "type": "feature",
+      "system": {
+        "description": "<p>Once a dire wolf has your scent, it never loses the trail. Can track across any terrain.</p>",
+        "actions": {
+          "tracker": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "c44ed9345b227d94",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "1709503cf3e27621",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Strahd's Spy",
+      "type": "feature",
+      "system": {
+        "description": "<p>These wolves report back to Strahd. What they see, he knows.</p>",
+        "actions": {
+          "spy": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "62be90e361f4f042",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "3bc127d1d667d2ee",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Dire Wolf",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/dire-wolf.jpg"
+    }
+  }
+}

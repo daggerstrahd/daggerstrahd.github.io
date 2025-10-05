@@ -1,0 +1,198 @@
+{
+  "name": "Strahd Zombie",
+  "type": "adversary",
+  "img": "assets/strahd-zombie.jpg",
+  "system": {
+    "description": "<p>Shambling corpses of ancient Barovian guards. Appear in hordes of 2d4+2 zombies.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 1,
+    "type": "horde",
+    "difficulty": 11,
+    "hordeHp": 6,
+    "damageThresholds": {
+      "major": 5,
+      "severe": 8
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 2,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Rotting Slam",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 1
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 2,
+              "dice": "d6",
+              "bonus": 2
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      },
+      "description": "Damage is per zombie in horde"
+    }
+  },
+  "items": [
+    {
+      "name": "Horde",
+      "type": "feature",
+      "system": {
+        "description": "<p>One zombie dies per Major damage threshold exceeded. Track HP as number of zombies remaining.</p>",
+        "actions": {
+          "horde": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "16d56983620a84d1",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "4f1bf05461315e69",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Loathsome Limbs",
+      "type": "feature",
+      "system": {
+        "description": "<p>When a Strahd zombie drops to 0 HP, its body parts continue attacking. It can still make one more attack before being destroyed.</p>",
+        "actions": {
+          "limbs": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "a299ae039b1f6bd9",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "b26adb04c33c029b",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Undead Fortitude",
+      "type": "feature",
+      "system": {
+        "description": "<p>When reduced to 0 HP, roll Instinct (Difficulty 10 + damage taken). On success, the zombie drops to 1 HP instead. Does not work against radiant damage or critical hits.</p>",
+        "actions": {
+          "fortitude": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "d8217135e16da74f",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "cdb95a67bef49ab5",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Strahd Zombie",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/strahd-zombie.jpg"
+    }
+  }
+}

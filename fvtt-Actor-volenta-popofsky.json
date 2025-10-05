@@ -1,0 +1,305 @@
+{
+  "name": "Volenta Popofsky",
+  "type": "adversary",
+  "img": "assets/volenta.jpg",
+  "system": {
+    "description": "<p>One of Strahd's three brides. Sadistic acrobat who delights in torture.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "standard",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 30
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Poisoned Dagger",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 4
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d8",
+              "bonus": 5
+            },
+            "type": [
+              "physical"
+            ]
+          },
+          {
+            "value": {
+              "flatMultiplier": 2,
+              "dice": "d6",
+              "bonus": 0
+            },
+            "type": [
+              "magical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Regeneration",
+      "type": "feature",
+      "system": {
+        "description": "<p>Clear 3 HP per turn (not in sunlight/running water)</p>",
+        "actions": {
+          "regen": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "deb8fe2c44e6909d",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "72de6a1f3c29fb8d",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Spider Climb",
+      "type": "feature",
+      "system": {
+        "description": "<p>Climb any surface without rolls</p>",
+        "actions": {
+          "climb": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "a08038361f05c764",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "92b074ea061214be",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "feature",
+      "system": {
+        "description": "<p>Vampiric bite that heals the vampire</p>",
+        "actions": {
+          "bite": {
+            "type": "attack",
+            "actionType": "action",
+            "range": "melee",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 3,
+                    "dice": "d8",
+                    "bonus": 5
+                  },
+                  "type": [
+                    "magical"
+                  ]
+                }
+              ]
+            },
+            "description": "Clears HP equal to damage dealt",
+            "_id": "0f9ae87ce6640c28",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "05f83fa6d9e38c1f",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Vampire Weaknesses",
+      "type": "feature",
+      "system": {
+        "description": "<p>Cannot enter homes uninvited. Sunlight and running water deal severe damage.</p>",
+        "actions": {
+          "weakness": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "60c8fb6e5c866255",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "1bd447a84ae6b798",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Acrobatic",
+      "type": "feature",
+      "system": {
+        "description": "<p>+2 to evasion rolls and advantage on agility-based checks</p>",
+        "actions": {
+          "acrobat": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "e3f3477333a56c4c",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "723c8628ffbd91a1",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Volenta Popofsky",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/volenta.jpg"
+    }
+  }
+}

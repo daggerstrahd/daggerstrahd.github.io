@@ -791,41 +791,6 @@ While motionless, the armor is indistinguishable from a normal suit of armor.
 
 ---
 
-## CONVERSION NOTES
-
-### Difficulty Guidelines
-- D&D CR 0-2 → Tier 1 (Difficulty 11-13)
-- D&D CR 3-5 → Tier 1-2 (Difficulty 13-15)
-- D&D CR 6-10 → Tier 2-3 (Difficulty 15-17)
-- D&D CR 11-15 → Tier 3-4 (Difficulty 17-19)
-- D&D CR 16+ → Tier 4 (Difficulty 19-20+)
-
-### HP and Thresholds
-- D&D HP divided by 10-15 roughly converts to Daggerheart HP
-- Thresholds should be set so Major = ~1/3 max HP, Severe = ~2/3 max HP
-- Stress typically equals HP for most creatures
-
-### Damage Conversion
-- D&D average damage ÷ 2 gives approximate Daggerheart damage
-- Add attack modifier to damage for simplicity
-- Use damage dice that feel appropriate:
-  - d6s for weak attacks
-  - d8s for standard attacks
-  - d10s for strong attacks
-  - d12s for legendary attacks
-
-### Special Abilities
-- **Legendary Actions** -> Multiple actions per round or powerful once-per-rest abilities
-- **Lair Actions** -> Spend Fear to activate environmental effects
-- **Legendary Resistance** -> Limited uses of "ignore this effect"
-- **D&D Saving Throws** -> Daggerheart rolls (Agility, Presence, Instinct, etc.)
-
-### Attack Modifier Guidelines
-- **Tier 1:** +1 to +2
-- **Tier 2:** +2 to +3
-- **Tier 3:** +3 to +4
-- **Tier 4:** +4 to +5
-
 ### Using Fear Economy
 The GM should use Fear tokens strategically:
 - **1 Fear:** Activate minor abilities, summon reinforcements

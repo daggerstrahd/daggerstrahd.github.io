@@ -1,0 +1,215 @@
+{
+  "name": "Rahadin",
+  "type": "adversary",
+  "img": "assets/rahadin.jpg",
+  "system": {
+    "description": "<p>Strahd's chamberlain. Ancient dusk elf warrior surrounded by screams of his victims.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "standard",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 32
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Scimitar Flurry",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 5
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d10",
+              "bonus": 6
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      },
+      "description": "3 attacks per turn"
+    }
+  },
+  "items": [
+    {
+      "name": "Screams of the Dead",
+      "type": "feature",
+      "system": {
+        "description": "<p>The anguished cries of Rahadin's countless victims surround him. Enemies within close range must mark Stress at the start of their turn.</p>",
+        "actions": {
+          "screams": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "close",
+            "target": {
+              "type": "hostile",
+              "amount": null
+            },
+            "_id": "b18465b845d74bb1",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "4e417dc389b95c8d",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Perfect Warrior",
+      "type": "feature",
+      "system": {
+        "description": "<p>Centuries of martial training. Can spend 1 Stress as a reaction to increase Difficulty by +3 against one attack.</p>",
+        "actions": {
+          "deflect": {
+            "type": "effect",
+            "actionType": "reaction",
+            "range": "self",
+            "target": {
+              "type": "self",
+              "amount": null
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 1,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "_id": "3193689a71fba48d",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "629dd2b2ebda4eb2",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Deathly Loyal",
+      "type": "feature",
+      "system": {
+        "description": "<p>Rahadin will die for Strahd without hesitation. Immune to charm and fear effects.</p>",
+        "actions": {
+          "loyal": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "25a5f8d339e2f511",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "b7ef09eaa2769698",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Rahadin",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/rahadin.jpg"
+    }
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "name": "Madam Eva",
+  "type": "adversary",
+  "img": "assets/madam-eva.jpg",
+  "system": {
+    "description": "<p>Ancient Vistana fortune-teller with penetrating eyes and knowing smile. Advisor and oracle who knows far more than she reveals.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 2,
+    "type": "social",
+    "difficulty": 14,
+    "damageThresholds": {
+      "major": 10,
+      "severe": 18
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Staff Strike",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 2
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 2,
+              "dice": "d6",
+              "bonus": 3
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Ageless",
+      "type": "feature",
+      "system": {
+        "description": "<p>Madam Eva is hundreds of years old but appears to be in her 70s. She is protected by the Dark Powers and cannot age or die of natural causes.</p>",
+        "actions": {
+          "ageless": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "67640d0ae69e1f39",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "da04fbaec0bc14fc",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Fortune Telling",
+      "type": "feature",
+      "system": {
+        "description": "<p>Madam Eva can perform tarokka readings that genuinely predict the future and determine the locations of key artifacts and allies.</p>",
+        "actions": {
+          "fortune": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "self",
+            "description": "Requires tarokka deck and willing participant",
+            "_id": "1537bb54855fa885",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "e9470183ada5fce5",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Evil Eye",
+      "type": "feature",
+      "system": {
+        "description": "<p>Target one creature within close range. They must make Presence save (Difficulty 14) or have disadvantage on their next roll.</p>",
+        "actions": {
+          "eye": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "_id": "b3353c658e80d586",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "effects": [
+        {
+          "name": "Evil Eye Curse",
+          "description": "<p>Target has disadvantage on next roll</p>",
+          "statuses": [
+            "curse"
+          ],
+          "_id": "da0b1a0dcf905436",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "changes": [],
+          "duration": {
+            "startTime": null,
+            "combat": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "tint": "#ffffff",
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.350",
+            "systemId": "daggerheart",
+            "systemVersion": "1.1.2"
+          },
+          "system": {
+            "rangeDependence": {
+              "enabled": false,
+              "type": "withinRange",
+              "target": "friendly",
+              "range": "self"
+            }
+          },
+          "origin": "Actor.PLACEHOLDER.Item.999f2353c07ec9ec71bb3aca",
+          "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg"
+        }
+      ],
+      "_id": "1808989ba6c6a898",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Curse",
+      "type": "feature",
+      "system": {
+        "description": "<p>Madam Eva can curse a creature. Target must make Instinct save (Difficulty 15) or suffer a debilitating curse chosen by the GM.</p>",
+        "actions": {
+          "curse": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 3,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "_id": "72f76845e887f04e",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "effects": [
+        {
+          "name": "Vistani Curse",
+          "description": "<p>Powerful curse with varied effects. Requires Remove Curse to lift.</p>",
+          "statuses": [
+            "curse"
+          ],
+          "_id": "2cd9a739887f0232",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "changes": [],
+          "duration": {
+            "startTime": null,
+            "combat": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "tint": "#ffffff",
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.350",
+            "systemId": "daggerheart",
+            "systemVersion": "1.1.2"
+          },
+          "system": {
+            "rangeDependence": {
+              "enabled": false,
+              "type": "withinRange",
+              "target": "friendly",
+              "range": "self"
+            }
+          },
+          "origin": "Actor.PLACEHOLDER.Item.92ad113f630e56e39df53811",
+          "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg"
+        }
+      ],
+      "_id": "28f0f231a0ecbbe5",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Vistani Insight",
+      "type": "feature",
+      "system": {
+        "description": "<p>Advantage on all insight, perception, and knowledge checks. Madam Eva sees through lies and deceptions easily.</p>",
+        "actions": {
+          "insight": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "765d41a6786d7500",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "24451cbd86650b94",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Protected by Fate",
+      "type": "feature",
+      "system": {
+        "description": "<p>Once per session, Madam Eva can reroll any failed save or check, or force an enemy to reroll a successful attack against her.</p>",
+        "actions": {
+          "protected": {
+            "type": "effect",
+            "actionType": "reaction",
+            "range": "self",
+            "uses": {
+              "value": 0,
+              "max": "1",
+              "recovery": "session",
+              "consumeOnSuccess": false
+            },
+            "_id": "03b0aa14faee3936",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "53fe247a4016ca19",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Madam Eva",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/madam-eva.jpg"
+    }
+  }
+}

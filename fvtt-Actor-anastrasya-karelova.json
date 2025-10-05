@@ -1,0 +1,389 @@
+{
+  "name": "Anastrasya Karelova",
+  "type": "adversary",
+  "img": "assets/anastrasya.jpg",
+  "system": {
+    "description": "<p>One of Strahd's three brides. Master seductress and manipulator.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "standard",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 30
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Claws",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 4
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d8",
+              "bonus": 5
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Regeneration",
+      "type": "feature",
+      "system": {
+        "description": "<p>Clear 3 HP per turn (not in sunlight/running water)</p>",
+        "actions": {
+          "regen": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "cbaa7d02306db599",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "500f74511b4634b8",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Spider Climb",
+      "type": "feature",
+      "system": {
+        "description": "<p>Climb any surface without rolls</p>",
+        "actions": {
+          "climb": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "793b0d2c30666ac2",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "09b937c0057061b3",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Bite",
+      "type": "feature",
+      "system": {
+        "description": "<p>Vampiric bite that heals the vampire</p>",
+        "actions": {
+          "bite": {
+            "type": "attack",
+            "actionType": "action",
+            "range": "melee",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 3,
+                    "dice": "d8",
+                    "bonus": 5
+                  },
+                  "type": [
+                    "magical"
+                  ]
+                }
+              ]
+            },
+            "description": "Clears HP equal to damage dealt",
+            "_id": "74f27f7d5e7a22da",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "f9beb2c79b0ce13c",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Vampire Weaknesses",
+      "type": "feature",
+      "system": {
+        "description": "<p>Cannot enter homes uninvited. Sunlight and running water deal severe damage.</p>",
+        "actions": {
+          "weakness": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "9dc98b368ddb2af4",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "87f90dbad3622eff",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Charm",
+      "type": "feature",
+      "system": {
+        "description": "<p>Dominate a target's mind. Target makes Presence + Instinct save against Difficulty 17 or becomes charmed.</p>",
+        "actions": {
+          "charm": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "any",
+              "amount": 1
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "description": "Charmed target trusts Anastrasya and follows reasonable requests",
+            "_id": "384768b06d90ea5b",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "effects": [
+        {
+          "name": "Charmed",
+          "description": "<p>Target is charmed and follows reasonable requests. If harmed, can retry saving throw.</p>",
+          "statuses": [
+            "curse"
+          ],
+          "_id": "dbdf3ed305bcf34b",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "changes": [],
+          "duration": {
+            "startTime": null,
+            "combat": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "tint": "#ffffff",
+          "sort": 0,
+          "flags": {},
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "exportSource": null,
+            "coreVersion": "13.350",
+            "systemId": "daggerheart",
+            "systemVersion": "1.1.2"
+          },
+          "system": {
+            "rangeDependence": {
+              "enabled": false,
+              "type": "withinRange",
+              "target": "friendly",
+              "range": "self"
+            }
+          },
+          "origin": "Actor.PLACEHOLDER.Item.f8e0451a5bacea51e2306211",
+          "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg"
+        }
+      ],
+      "_id": "4d93c2acd68f2b52",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Enhanced Deception",
+      "type": "feature",
+      "system": {
+        "description": "<p>Anastrasya has advantage on all deception and persuasion rolls</p>",
+        "actions": {
+          "deception": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "51c04d65dae903ba",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "3d01722bf105da8d",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Anastrasya Karelova",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/anastrasya.jpg"
+    }
+  }
+}

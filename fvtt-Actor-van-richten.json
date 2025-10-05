@@ -1,0 +1,359 @@
+{
+  "name": "Rudolph van Richten",
+  "type": "adversary",
+  "img": "assets/van-richten.jpg",
+  "system": {
+    "description": "<p>Greatest vampire hunter alive, disguised as ringmaster Rictavio. Legendary monster hunter and potential powerful ally.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "standard",
+    "difficulty": 17,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 32
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "+1 Saber",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 5
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d8",
+              "bonus": 6
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      },
+      "description": "Silvered blade"
+    }
+  },
+  "items": [
+    {
+      "name": "Monster Slayer",
+      "type": "feature",
+      "system": {
+        "description": "<p>Advantage on all rolls against undead and fiends. Deals +3d6 damage to such creatures.</p>",
+        "actions": {
+          "slayer": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "3830212a924838bd",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "ae319fac80d08d52",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Master of Disguise",
+      "type": "feature",
+      "system": {
+        "description": "<p>Currently disguised as Rictavio the ringmaster. Advantage on deception checks to maintain cover identities.</p>",
+        "actions": {
+          "disguise": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "12c835b706007e5c",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "bfa663baf464fdfa",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Holy Water Arsenal",
+      "type": "feature",
+      "system": {
+        "description": "<p>Carries 10+ vials of holy water. Each deals 2d6 magic damage to undead/fiends.</p>",
+        "actions": {
+          "water": {
+            "type": "attack",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 2,
+                    "dice": "d6",
+                    "bonus": 0
+                  },
+                  "type": [
+                    "magical"
+                  ]
+                }
+              ]
+            },
+            "uses": {
+              "value": 10,
+              "max": "10",
+              "recovery": "session",
+              "consumeOnSuccess": false
+            },
+            "_id": "3c030abf333ffc4c",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "94f82563638e2c6e",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Tactical Genius",
+      "type": "feature",
+      "system": {
+        "description": "<p>When commanding allies, they gain +2 to attack rolls. Van Richten can spend 2 Stress to grant this bonus for one round.</p>",
+        "actions": {
+          "tactics": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "far",
+            "target": {
+              "type": "friendly",
+              "amount": null
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "description": "All allies within range gain +2 to attacks this round",
+            "_id": "9589afe06e253f48",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "58daa5ee44e8dd99",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Crossbow Expert",
+      "type": "feature",
+      "system": {
+        "description": "<p>Can fire crossbow as bonus action. Hand crossbow deals 3d6+4 physical damage.</p>",
+        "actions": {
+          "crossbow": {
+            "type": "attack",
+            "actionType": "action",
+            "range": "far",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 3,
+                    "dice": "d6",
+                    "bonus": 4
+                  },
+                  "type": [
+                    "physical"
+                  ]
+                }
+              ]
+            },
+            "_id": "7725fef637b974bd",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "503dded06ac29584",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Saber-Toothed Tiger Companion",
+      "type": "feature",
+      "system": {
+        "description": "<p>Van Richten has a trained saber-toothed tiger named Erasmus hidden in his wagon.</p>",
+        "actions": {
+          "companion": {
+            "type": "summon",
+            "actionType": "action",
+            "range": "close",
+            "_id": "8761907feaf6fdaf",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "552082fc250b2e35",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Rudolph van Richten",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/van-richten.jpg"
+    }
+  }
+}

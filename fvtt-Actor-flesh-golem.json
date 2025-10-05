@@ -1,0 +1,231 @@
+{
+  "name": "Flesh Golem",
+  "type": "adversary",
+  "img": "assets/flesh-golem.jpg",
+  "system": {
+    "description": "<p>Stitched-together corpse animated through dark rituals. Created by the Abbott at the Abbey of St. Markovia.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "bruiser",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 18,
+      "severe": 32
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 6,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Slam",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 5
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d10",
+              "bonus": 5
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Lightning Absorption",
+      "type": "feature",
+      "system": {
+        "description": "<p>When hit by magic/lightning attacks, heals 1d6 HP instead of taking damage</p>",
+        "actions": {
+          "absorb": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "8d200d806133ccce",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "cc1d41aeef4fa170",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Aversion to Fire",
+      "type": "feature",
+      "system": {
+        "description": "<p>Taking fire damage causes fear. Golem has disadvantage on attacks and checks until end of next turn.</p>",
+        "actions": {
+          "aversion": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "65b326e16c380fcc",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "51880ee66d260ba3",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Berserk",
+      "type": "feature",
+      "system": {
+        "description": "<p>When damaged below half HP, must make Instinct save (Difficulty 14) or go berserk - attacks nearest creature indiscriminately.</p>",
+        "actions": {
+          "berserk": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "47a68a5d5b18cb0e",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "b4631d75a49c8a55",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Construct Immunities",
+      "type": "feature",
+      "system": {
+        "description": "<p>Immune to charm, fear, exhaustion, poison, and disease effects</p>",
+        "actions": {
+          "immunity": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "9f4e4eb24fe8a2c4",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "1a080c2beed11c43",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Flesh Golem",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/flesh-golem.jpg"
+    }
+  }
+}

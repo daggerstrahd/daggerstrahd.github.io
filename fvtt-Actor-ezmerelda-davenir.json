@@ -1,0 +1,269 @@
+{
+  "name": "Ezmerelda d'Avenir",
+  "type": "adversary",
+  "img": "assets/ezmerelda.jpg",
+  "system": {
+    "description": "<p>Young vampire hunter and Van Richten's former student. Skilled with blade and spell. Can be powerful ally or formidable foe.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 3,
+    "type": "standard",
+    "difficulty": 16,
+    "damageThresholds": {
+      "major": 16,
+      "severe": 28
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 5,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Rapier Strike",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 4
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 3,
+              "dice": "d8",
+              "bonus": 5
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Vampire Hunter",
+      "type": "feature",
+      "system": {
+        "description": "<p>Advantage on rolls against undead. +1d8 damage against vampires specifically.</p>",
+        "actions": {
+          "hunter": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "db0ef311e199ab07",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "db8809f71a0fdfe7",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Prosthetic Leg",
+      "type": "feature",
+      "system": {
+        "description": "<p>Lost her leg to a werewolf. Prosthetic contains hidden blade and storage compartments.</p>",
+        "actions": {
+          "leg": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "6473e6deffc70fe1",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "c30ca59057ee6c14",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Holy Water",
+      "type": "feature",
+      "system": {
+        "description": "<p>Carries multiple vials. Deals 2d6 magic damage to undead/fiends.</p>",
+        "actions": {
+          "water": {
+            "type": "attack",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "hostile",
+              "amount": 1
+            },
+            "damage": {
+              "parts": [
+                {
+                  "value": {
+                    "flatMultiplier": 2,
+                    "dice": "d6",
+                    "bonus": 0
+                  },
+                  "type": [
+                    "magical"
+                  ]
+                }
+              ]
+            },
+            "uses": {
+              "value": 3,
+              "max": "3",
+              "recovery": "session",
+              "consumeOnSuccess": false
+            },
+            "_id": "ee735abd287637a1",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "c89d70bb681ff468",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Tactical Mind",
+      "type": "feature",
+      "system": {
+        "description": "<p>Trained by Van Richten. Can spend 2 Stress to grant allies +2 to their next attack roll.</p>",
+        "actions": {
+          "tactics": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "friendly",
+              "amount": null
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 2,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "_id": "3bfdd90246935bc0",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "0dd8685d77edac36",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Ezmerelda d'Avenir",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/ezmerelda.jpg"
+    }
+  }
+}

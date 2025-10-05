@@ -1,0 +1,245 @@
+{
+  "name": "Swarm of Bats",
+  "type": "adversary",
+  "img": "assets/bat-swarm.jpg",
+  "system": {
+    "description": "<p>Hundreds of shrieking bats serving as Strahd's spies. Swarms throughout Castle Ravenloft and the forests.</p>",
+    "resistance": {
+      "physical": {
+        "resistance": true,
+        "immunity": false,
+        "reduction": 0
+      },
+      "magical": {
+        "resistance": false,
+        "immunity": false,
+        "reduction": 0
+      }
+    },
+    "tier": 1,
+    "type": "horde",
+    "difficulty": 12,
+    "damageThresholds": {
+      "major": 5,
+      "severe": 8
+    },
+    "resources": {
+      "hitPoints": {
+        "value": 0,
+        "max": 4,
+        "isReversed": true
+      },
+      "stress": {
+        "value": 0,
+        "max": 2,
+        "isReversed": true
+      }
+    },
+    "attack": {
+      "name": "Biting Cloud",
+      "range": "melee",
+      "target": {
+        "type": "hostile",
+        "amount": 1
+      },
+      "roll": {
+        "bonus": 1
+      },
+      "damage": {
+        "parts": [
+          {
+            "value": {
+              "flatMultiplier": 2,
+              "dice": "d6",
+              "bonus": 2
+            },
+            "type": [
+              "physical"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Swarm",
+      "type": "feature",
+      "system": {
+        "description": "<p>Can occupy same space as other creatures. Resistant to physical damage from single-target attacks. Vulnerable to area effects.</p>",
+        "actions": {
+          "swarm": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "57869bcb57c5d4fa",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "c7cb5135f2cd98bc",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Echolocation",
+      "type": "feature",
+      "system": {
+        "description": "<p>Can navigate and detect creatures in complete darkness through sound. Blind beyond close range if unable to hear.</p>",
+        "actions": {
+          "echo": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "4e7e006780dc8fa1",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "4794aba65d140d30",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Strahd's Spies",
+      "type": "feature",
+      "system": {
+        "description": "<p>These bats report what they see to Strahd through supernatural connection.</p>",
+        "actions": {
+          "spy": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "7349000a68f2681c",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "e70f1f2a59965242",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Obscuring Cloud",
+      "type": "feature",
+      "system": {
+        "description": "<p>The swarm can spread out to fill a close area, making it heavily obscured for creatures inside.</p>",
+        "actions": {
+          "obscure": {
+            "type": "effect",
+            "actionType": "action",
+            "range": "close",
+            "target": {
+              "type": "any",
+              "amount": null
+            },
+            "cost": [
+              {
+                "key": "stress",
+                "value": 1,
+                "scalable": false,
+                "keyIsID": false,
+                "step": null,
+                "consumeOnSuccess": false
+              }
+            ],
+            "_id": "370806b38061a54c",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "777a7295cbf7bfc1",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "coreVersion": "13.350",
+    "systemId": "daggerheart",
+    "systemVersion": "1.1.2"
+  },
+  "prototypeToken": {
+    "name": "Swarm of Bats",
+    "displayName": 0,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "assets/bat-swarm.jpg"
+    }
+  }
+}
