@@ -67,7 +67,7 @@
       "name": "Shapechanger",
       "type": "feature",
       "system": {
-        "description": "<p>Transform between human, wolf, and hybrid forms</p>",
+        "description": "<p><strong>Action, 1 Stress:</strong> Transform between human, wolf, or hybrid form. Equipment merges. Stats same in all forms except wolf (can't use weapons).</p>",
         "actions": {
           "transform": {
             "type": "effect",
@@ -106,7 +106,7 @@
       "name": "Damage Resistance",
       "type": "feature",
       "system": {
-        "description": "<p>Resistant to non-magical, non-silver weapons. Reduce physical damage by half.</p>",
+        "description": "<p><strong>Passive:</strong> Resistant to physical damage from non-magical, non-silvered weapons (half damage).</p>",
         "actions": {
           "resistance": {
             "type": "effect",
@@ -141,7 +141,7 @@
       "name": "Pack Tactics",
       "type": "feature",
       "system": {
-        "description": "<p>Advantage on attacks when an ally is adjacent to the target</p>",
+        "description": "<p><strong>Passive:</strong> Advantage on attacks if ally within Very Close of target.</p>",
         "actions": {
           "pack": {
             "type": "effect",
@@ -176,7 +176,7 @@
       "name": "Keen Senses",
       "type": "feature",
       "system": {
-        "description": "<p>Advantage on perception checks involving hearing or smell</p>",
+        "description": "<p><strong>Passive:</strong> Advantage on Instinct checks involving hearing or smell. Can track by scent.</p>",
         "actions": {
           "senses": {
             "type": "effect",
@@ -211,7 +211,7 @@
       "name": "Lycanthropy Curse",
       "type": "feature",
       "system": {
-        "description": "<p>Humanoids bitten must make Instinct roll (Difficulty 14) or contract lycanthropy curse</p>",
+        "description": "<p><strong>Passive:</strong> Humanoid bitten must make Difficulty 13 Strength save or contract lycanthropy. Curse can be removed by Remove Curse spell or wolfsbane cure.</p>",
         "actions": {
           "curse": {
             "type": "effect",

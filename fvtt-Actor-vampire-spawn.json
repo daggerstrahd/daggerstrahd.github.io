@@ -66,7 +66,7 @@
       "name": "Regeneration",
       "type": "feature",
       "system": {
-        "description": "<p>Clear 2 HP per turn (not in sunlight/running water)</p>",
+        "description": "<p><strong>Passive:</strong> Regain 2 HP at start of each turn if above 0 HP. Doesn't work if in sunlight or running water.</p>",
         "actions": {
           "regen": {
             "type": "effect",
@@ -101,7 +101,7 @@
       "name": "Spider Climb",
       "type": "feature",
       "system": {
-        "description": "<p>Climb any surface without rolls</p>",
+        "description": "<p><strong>Passive:</strong> Can climb walls and ceilings without checks. Move at full speed.</p>",
         "actions": {
           "climb": {
             "type": "effect",
@@ -136,7 +136,7 @@
       "name": "Bite",
       "type": "feature",
       "system": {
-        "description": "<p>Vampiric bite attack</p>",
+        "description": "<p><strong>Action, 2 Stress:</strong> One creature grappled by the vampire. 2d8+3 magic/piercing damage + target's max HP reduced by damage dealt. Vampire regains HP equal to damage. Reduction lasts until rest.</p>",
         "actions": {
           "bite": {
             "type": "attack",
@@ -199,7 +199,7 @@
       "name": "Vampire Weaknesses",
       "type": "feature",
       "system": {
-        "description": "<p>Cannot enter homes uninvited. Sunlight and running water deal severe damage. Stake through heart paralyzes. Running water deals 2d6 damage/turn.</p>",
+        "description": "<p><strong>Passive:</strong> Takes 4 Stress in sunlight (start of turn). Cannot enter residence without invitation. Takes 2d10 radiant damage from running water (per turn). Wooden stake through heart while helpless destroys it.</p>",
         "actions": {
           "weakness": {
             "type": "effect",
@@ -214,6 +214,41 @@
         }
       },
       "_id": "035bd1a87ef23874",
+      "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.350",
+        "systemId": "daggerheart",
+        "systemVersion": "1.1.2"
+      }
+    },
+    {
+      "name": "Undead Nature",
+      "type": "feature",
+      "system": {
+        "description": "<p><strong>Passive:</strong> Doesn't need air, food, drink, or sleep. Immune to poison, disease.</p>",
+        "actions": {
+          "undead": {
+            "type": "effect",
+            "actionType": "passive",
+            "range": "self",
+            "_id": "e8cf1eb4164fc8b5",
+            "systemPath": "actions",
+            "chatDisplay": true,
+            "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
+            "effects": []
+          }
+        }
+      },
+      "_id": "e8cf1eb4164fc8b5",
       "img": "systems/daggerheart/assets/icons/documents/items/stars-stack.svg",
       "folder": null,
       "sort": 0,

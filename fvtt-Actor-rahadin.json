@@ -67,7 +67,7 @@
       "name": "Screams of the Dead",
       "type": "feature",
       "system": {
-        "description": "<p>The anguished cries of Rahadin's countless victims surround him. Enemies within close range must mark Stress at the start of their turn.</p>",
+        "description": "<p><strong>Passive:</strong> The anguished cries of Rahadin's countless victims surround him. Any creature that starts its turn within Very Close of Rahadin takes 1 Stress. Undead and constructs are immune.</p>",
         "actions": {
           "screams": {
             "type": "effect",
