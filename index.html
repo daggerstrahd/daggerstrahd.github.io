@@ -343,7 +343,7 @@
                         <li><strong>Legendary Resistance:</strong> 3x/session ignore damage or effects</li>
                         <li><strong>Regeneration:</strong> Clear 2 HP per turn (if not in sunlight/running water)</li>
                         <li><strong>Spider Climb:</strong> Can climb any surface including ceilings</li>
-                        <li><strong>Charm (3 Stress):</strong> Dominate minds (Difficulty 17, Presence + Instinct to resist)</li>
+                        <li><strong>Charm (3 Stress):</strong> Dominate minds (Difficulty 17, Presence / Instinct to resist)</li>
                         <li><strong>Move Like Shadow (2 Stress):</strong> Teleport to any space within Far range in dim light/darkness</li>
                         <li><strong>Bite (2 Stress):</strong> 3d8+6 magic damage, clears 1 hit point, reduces target's maximum hit points by 1</li>
                         <li><strong>Children of the Night (4 Stress, 1x/session):</strong> Summon 2d4 swarms or 3d6 wolves</li>
@@ -359,7 +359,7 @@
                     </ul>
                     
                     <h4 style="margin-top: 0.75rem;">Heart of Sorrow</h4>
-                    <p style="font-size: 0.875rem;">A 10-foot-diameter crystal heart in Castle Ravenloft's tower with 50 HP. While it exists, damage to Strahd is transferred to the Heart first. Strahd knows when it takes damage and from what source.</p>
+                    <p style="font-size: 0.875rem;">A 10-foot-diameter crystal heart in Castle Ravenloft's tower with 20 hit points. While it exists, damage to Strahd is transferred to the Heart first. Strahd knows when it takes damage and from what source.</p>
                     
                     <h4 style="margin-top: 0.75rem;">Weaknesses</h4>
                     <ul style="font-size: 0.875rem;">
@@ -434,11 +434,10 @@
                     <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Scimitar Flurry (3d10+6 physical, 3 attacks/turn)</p>
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
-                        <li><strong>Screams of the Dead (Passive):</strong> Any creature within Very Close range hears agonized screams. At start of Rahadin's turn, all enemies within Very Close must make Difficulty 16 Instinct save with Fear or mark 1 Stress. Doesn't affect Strahd or creatures immune to fear</li>
-                        <li><strong>Deathly Choir (Action, 3 Stress, 1x/combat):</strong> Amplify screams. All enemies within Close range take 4d8 psychic/magic damage and make Difficulty 16 Instinct save with Fear or become frightened until end of their next turn</li>
-                        <li><strong>Multiattack (Action):</strong> Make three scimitar attacks per turn</li>
-                        <li><strong>Perfect Parry (Reaction, 1 Stress):</strong> When hit by melee attack, add +3 to Difficulty. If this causes miss, immediately counterattack</li>
-                        <li><strong>Loyal Guardian (Passive):</strong> +2 to all actions when defending Strahd</li>
+                        <li><strong>Screams of the Dead (Passive):</strong> Any creature within Very Close range hears agonized screams. At start of Rahadin's turn, all enemies within Very Close must mark 1 Stress.</li>
+                        <li><strong>Deathly Choir (Action, 3 Stress, 1x/combat):</strong> Amplify screams. All enemies within Close range take 4d8 psychic/magic damage and must mark 2 Stress and become Vulnerable until end of their next turn</li>
+                        <li><strong>Perfect Parry (Reaction, 1 Stress):</strong> When hit by melee attack, add +3 to Difficulty. If this causes miss, immediately counterattack and take the spotlight</li>
+                        <li><strong>Loyal Guardian (Passive):</strong> +2 to Difficulty when defending Strahd</li>
                     </ul>
                 </div>
 
@@ -451,18 +450,17 @@
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
                         <li><strong>Vampire Hunter (Passive):</strong> Advantage on all rolls against undead. Deal +1d8 extra damage vs vampires specifically</li>
-                        <li><strong>Hunter's Tools (Passive):</strong> Carries holy water (2d6 radiant vs undead), wooden stakes, silvered weapons, spellcasting focus</li>
-                        <li><strong>Spellcasting:</strong> Fire Bolt (cantrip, 2d10 magic), Magic Missile (2 Stress, 3×1d4+1 magic each), Misty Step (1 Stress, teleport Close range), Protection from Evil (2 Stress, ward vs undead 10 min)</li>
-                        <li><strong>Prosthetic Leg (Passive):</strong> Can detach as improvised weapon (1d6). Agility checks to avoid falling have disadvantage</li>
-                        <li><strong>Vistani Training (Passive):</strong> +2 to Investigation and Survival</li>
-                        <li><strong>Inspire Courage (Action, 2 Stress):</strong> One ally within Close gains advantage on next attack and clears 1 Stress</li>
+                        <li><strong>Hunter's Tools (Passive):</strong> Carries holy water (2d6 vs undead), wooden stakes, silvered weapons</li>
+                        <li><strong>Spellcasting:</strong> Fire Bolt (2d10 magic), Magic Missile (2 Stress, 3×1d4+1 magic each), Misty Step (1 Stress, teleport Close range)</li>
+                        <li><strong>Prosthetic Leg (Passive):</strong> Can detach as improvised weapon (1d6). When in situations where balance matters, rolls with disadvantage</li>
+                        <li><strong>Inspire Courage (Action, 2 Stress):</strong> One ally within Close range gains advantage on next attack and clears 1 Stress</li>
                     </ul>
                 </div>
 
                 <!-- NIGHT HAGS -->
                 <div class="card">
                     <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Night Hags - Support</h4>
-                    <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Hideous crones with blue-gray skin and iron teeth who corrupt souls and feed on nightmares.</p>
+                    <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Hideous crones with blue-gray skin and iron teeth who corrupt souls and feed on nightmares. They can attack during long rests.</p>
                     <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16 | Thresholds 16/28 | HP 5 | Stress 5 | Attack +4</p>
                     <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Claws (3d8+4 magic)</p>
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
@@ -471,8 +469,7 @@
                         <li><strong>Etherealness (Action, 2 Stress):</strong> Enter Ethereal Plane. Can see/hear material plane but can't interact. Move through solid objects. Lasts until dismissed</li>
                         <li><strong>Nightmare Haunting (Action, 3 Stress, requires sleeping target):</strong> Touch sleeping creature on Ethereal Plane. Target has horrific nightmares, can't wake naturally. On waking, gains no benefit from rest and marks 2 Stress. After 7 nights, target dies</li>
                         <li><strong>Shapechanger (Action):</strong> Transform into Medium humanoid female or back. Equipment transforms with her</li>
-                        <li><strong>Hag Coven (Passive, requires all 3 within Close range):</strong> Share spell pool. Can cast Dispel Magic (2 Stress), Phantasmal Force (2 Stress), Hold Person (2 Stress), Scrying (3 Stress), Lightning Bolt (3 Stress, 8d6 magic)</li>
-                        <li><strong>Dream Pastries (Story):</strong> Bake pastries from bones of kidnapped children. Sell for 1gp each. Addictive and provide pleasant visions</li>
+                        <li><strong>Dream Pastries (Story):</strong> Bake pastries from bones of kidnapped children. Sell for a handful of gold each. Addictive and provide pleasant visions</li>
                     </ul>
                 </div>
 
@@ -481,15 +478,15 @@
                     <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Tree Blight - Bruiser</h4>
                     <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">A 30-foot-tall animated dead tree with blood for sap. Crushes and feeds on living creatures.</p>
                     <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16 | Thresholds 18/32 | HP 6 | Stress 4 | Attack +5</p>
-                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Branch (3d10+6 physical, Very Close) or Bite (3d12+5 physical, Melee, grappled targets only)</p>
+                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Branch (3d10+6 physical, Very Close) or Bite (3d12+5 physical, Melee, grabbed targets only)</p>
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
-                        <li><strong>Grasping Roots (Action, 2 Stress):</strong> Roots erupt in Close range area. All creatures make Difficulty 16 Strength save with Fear or become grappled (escape Strength Difficulty 16). Area becomes difficult terrain</li>
-                        <li><strong>Bite (Action, requires grappled target):</strong> 3d12+5 damage. Target makes Difficulty 16 Strength save with Fear or be swallowed (restrained, blinded, 2d8 acid/round). Max 2 swallowed creatures</li>
+                        <li><strong>Grasping Roots (Action, 2 Stress):</strong> Roots erupt in Close range area. All creatures must spend Hope or become grabbed (held in place, disadvantage to action rolls). Escape requires spending Hope or dealing Major damage threshold to the roots. Area becomes difficult terrain with decreased movement speed</li>
+                        <li><strong>Bite (Action, requires grabbed target):</strong> 3d12+5 damage. Target must spend Hope or be swallowed (cannot move, cannot see, takes 2d8 acid/round). Max 2 swallowed creatures</li>
                         <li><strong>False Appearance (Passive):</strong> While motionless, indistinguishable from dead tree</li>
                         <li><strong>Siege Monster (Passive):</strong> Deals double damage to objects and structures</li>
                         <li><strong>Fire Resistance (Passive):</strong> Takes half damage from fire</li>
-                        <li><strong>Thick Bark (Passive):</strong> Damage reduction of 5 from non-magical weapons</li>
+                        <li><strong>Thick Bark (Passive):</strong> Resistance to non-magical weapons</li>
                     </ul>
                 </div>
 
@@ -498,13 +495,13 @@
                     <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Shambling Mound - Bruiser</h4>
                     <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Massive heap of rotting vegetation animated by dark magic. Death House's final guardian.</p>
                     <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 16 | Thresholds 18/32 | HP 6 | Stress 4 | Attack +5</p>
-                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Slam (3d8+6 physical, can grapple)</p>
+                    <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Slam (3d8+6 physical, can grab)</p>
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
-                        <li><strong>Lightning Absorption (Passive):</strong> When hit by lightning/electricity/magic damage, takes no damage. Instead heals HP equal to damage dealt</li>
-                        <li><strong>Engulf (Action, 2 Stress, requires grappled target):</strong> Pull grappled Medium or smaller creature inside body. Target restrained, blinded, can't breathe, takes 2d8+4 physical at start of each mound's turn. Can grapple 2 creatures at once</li>
-                        <li><strong>Slam Attack (Action):</strong> 3d8+6 physical. Target grappled (escape Strength Difficulty 16) unless they use Fear to avoid</li>
-                        <li><strong>Resistance (Passive):</strong> Takes half damage from physical, cold, and fire attacks</li>
+                        <li><strong>Lightning Absorption (Passive):</strong> When hit by lightning/electricity/magic damage, takes no damage. Instead heals HP equal to HP after threshold damage</li>
+                        <li><strong>Engulf (Action, 2 Stress, requires grabbed target):</strong> Pull grabbed Medium or smaller creature inside body. Target held in place, cannot see, cannot breathe, takes 2d8+4 physical at start of each mound's turn. Can grab 2 creatures at once</li>
+                        <li><strong>Slam Attack (Action):</strong> 3d8+6 physical. On successful hit: target grabbed (held in place, disadvantage on action rolls, escape requires spending Hope or dealing Major damage)</li>
+                        <li><strong>Resistance (Passive):</strong> Takes half damage from physical attacks</li>
                         <li><strong>Plant Regeneration (Passive):</strong> If in bright sunlight, clear 1 HP at start of turn</li>
                     </ul>
                 </div>
@@ -517,12 +514,9 @@
                     <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Slam (3d10+5 physical)</p>
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
-                        <li><strong>Lightning Absorption (Passive):</strong> When hit by lightning/electricity/magic, takes no damage. Instead heals 1d6 HP</li>
-                        <li><strong>Aversion to Fire (Passive):</strong> When hit by fire, makes Difficulty 13 Instinct save or becomes frightened of fire source until end of next turn (uses action to move away)</li>
+                        <li><strong>Lightning Absorption (Passive):</strong> When hit by lightning/electricity (magic) damage, takes no damage. Instead heals 1d6 HP. Fire ( narratively ) in this case doesn't count as magic damage</li>
+                        <li><strong>Aversion to Fire (Passive):</strong> When hit by fire, must spend Hope or becomes compelled to flee fire source until end of next turn (uses action to move away)</li>
                         <li><strong>Berserk (Trigger):</strong> When damaged and below half HP, roll d6. On 6, goes berserk. Attacks nearest creature (ally or enemy). Stays berserk until destroyed or healed above half HP</li>
-                        <li><strong>Immutable Form (Passive):</strong> Immune to spells/effects that alter form</li>
-                        <li><strong>Magic Resistance (Passive):</strong> Advantage on saves vs spells</li>
-                        <li><strong>Construct Nature (Passive):</strong> Immune to poison, psychic, charm, exhaustion, fear, paralysis, petrification</li>
                     </ul>
                 </div>
 
@@ -536,7 +530,7 @@
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
                         <li><strong>Regeneration (Passive):</strong> Clear 2 HP at start of each turn if above 0 HP</li>
                         <li><strong>Rejuvenation (Passive):</strong> If destroyed, reforms in 24 hours at Argynvostholt with full HP unless curse is lifted</li>
-                        <li><strong>Vengeful Glare (Action, 2 Stress):</strong> Target one creature within Close range. Target makes Difficulty 17 Instinct save with Fear. Fail: Paralyzed 1 minute (can repeat save each turn). Success: Frightened until end of next turn</li>
+                        <li><strong>Vengeful Glare (Action, 2 Stress):</strong> Target one creature within Close range. Target must spend Hope or cannot take actions for 1 minute, mark 2 Stress at start of each turn (can spend Hope each turn to break free). If they spend Hope to resist: Mark 2 Stress and become Vulnerable until end of next turn</li>
                         <li><strong>Turn Immunity (Passive):</strong> Cannot be turned or affected by Turn Undead</li>
                         <li><strong>Commander (Passive):</strong> All revenant allies within Close range add +2 to attack rolls</li>
                         <li><strong>Hatred of Strahd (Story):</strong> OPPOSES killing Strahd permanently. Wants Strahd to suffer eternally. Will work against those trying to destroy Strahd</li>
@@ -552,11 +546,11 @@
                     <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Greataxe (3d8+6 physical) or Fiendish Claw (3d8+7 physical + 2d6 fire/magic)</p>
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
-                        <li><strong>Fiendish Arm (Passive):</strong> Right arm is barbed devil's arm. Immune to being disarmed on that side. +2 to Strength checks</li>
+                        <li><strong>Fiendish Arm (Passive):</strong> Right arm is barbed devil's arm. Cannot be forced to drop weapon in that hand. +2 to Action Rolls involving raw physical power</li>
                         <li><strong>Hurl Flame (Action, 2 Stress):</strong> Ranged spell attack, Far range. 3d6 fire/magic damage. Can ignite flammable objects</li>
                         <li><strong>Axe and Claw (Action):</strong> Make one greataxe attack and one fiendish claw attack</li>
-                        <li><strong>Intimidating Presence (Action, 2 Stress):</strong> All enemies within Very Close make Difficulty 15 Presence save with Fear or become frightened 1 minute. Can repeat save each turn</li>
-                        <li><strong>Brute Strength (Passive):</strong> +2 to all Strength checks</li>
+                        <li><strong>Intimidating Presence (Action, 2 Stress):</strong> All enemies within Very Close must spend Hope or mark 2 Stress and become Vulnerable for 1 minute. Can spend Hope each turn to break free</li>
+                        <li><strong>Brute Strength (Passive):</strong> +2 to all Action Rolls involving raw physical power</li>
                         <li><strong>Obsessed (Story):</strong> Strange obsession with Ireena. Commissions dolls resembling her</li>
                     </ul>
                 </div>
@@ -570,18 +564,14 @@
                     <p style="font-size: 0.875rem;"><strong>Spells:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
                         <li><strong>Fire Bolt (Action):</strong> 3d10 fire/magic damage, Far range. Can ignite objects</li>
-                        <li><strong>Mage Armor (Action, 1 Stress):</strong> +3 to armor for 8 hours. Cannot stack with other armor</li>
-                        <li><strong>Shield (Reaction, 1 Stress):</strong> +5 to armor against one attack until your next turn</li>
-                        <li><strong>Magic Missile (Action, 2 Stress):</strong> Three darts, 1d4+1 force/magic each. Auto-hit, must target separate creatures</li>
+                        <li><strong>Magic Missile (Action, 2 Stress):</strong> Three darts, 1d4+1 force/magic each.</li>
                         <li><strong>Misty Step (Action, 1 Stress):</strong> Teleport up to Close range</li>
-                        <li><strong>Lightning Bolt (Action, 3 Stress):</strong> Far range line, 8d6 lightning/magic. Difficulty 16 Agility save for half</li>
-                        <li><strong>Blast of Flame (Action, 3 Stress):</strong> Close cone, 8d6 fire/magic. Difficulty 16 Agility save for half</li>
-                        <li><strong>Counterspell (Reaction, 3 Stress):</strong> Interrupt enemy spellcasting within Far range</li>
-                        <li><strong>Greater Invisibility (Action, 4 Stress):</strong> Invisible for 1 minute, doesn't end on attack</li>
+                        <li><strong>Lightning Bolt (Action, 3 Stress):</strong> Far range line, 8d6 lightning/magic damage. Players can do a finesse reaction roll to dive for cover and take half damage</li>
+                        <li><strong>Blast of Flame (Action, 3 Stress):</strong> Close cone, 8d6 fire/magic damage. Players can do a finesse reaction roll to dive for cover and take half damage</li>
+                        <li><strong>Counterspell (Reaction, 3 Stress):</strong> Interrupt enemy spellcasting within Far range. Must make an attack roll against the difficulty of the enemy to succeed</li>
                     </ul>
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
-                        <li><strong>Fey Ancestry (Passive):</strong> Advantage vs charm, cannot be magically put to sleep</li>
                         <li><strong>Darkvision (Passive):</strong> See in darkness as if dim light to Far range</li>
                         <li><strong>Arcane Knowledge (Passive):</strong> +3 to all magic-related Knowledge checks</li>
                         <li><strong>Arcane Recovery (Action, once per rest):</strong> Recover 3 Stress during short rest</li>
@@ -597,13 +587,12 @@
                     <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> +1 Saber (3d8+6 physical, silvered) or Crossbow (3d6+4 physical)</p>
                     <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
-                        <li><strong>Monster Slayer (Passive):</strong> Advantage on all rolls vs undead and fiends. +3d6 damage to his quarry (usually vampires)</li>
+                        <li><strong>Monster Slayer (Passive):</strong> Advantage on all rolls vs undead and fiends.</li>
                         <li><strong>Hunter's Tools (Passive):</strong> Carries holy water (3 vials, 2d8 radiant/magic to undead), wooden stakes, silvered weapons, garlic, holy symbols. Knows undead weaknesses</li>
                         <li><strong>Master of Disguise (Passive):</strong> Currently disguised as Rictavio, half-elf ringmaster. Has Hat of Disguise. +4 to Presence checks for deception</li>
-                        <li><strong>Tactical Genius (Action, 2 Stress):</strong> Command allies within Far range. All allies gain advantage on next attack and +2 to armor until Van Richten's next turn</li>
+                        <li><strong>Tactical Genius (Action, 2 Stress):</strong> Command allies within Far range. All allies gain advantage on next attack and +2 to evasion until Van Richten's next turn</li>
                         <li><strong>Quick Reflexes (Reaction, 1 Stress):</strong> When missed by attack, immediately make one saber or crossbow attack against attacker</li>
                         <li><strong>Saber Mastery (Passive):</strong> Saber attacks score critical hit on 19-20</li>
-                        <li><strong>Trained Physician (Passive):</strong> Can stabilize dying creatures as bonus action. +3 to medicine checks</li>
                         <li><strong>Haunted Past (Story):</strong> Lost his son to vampires. Carries great guilt but unwavering determination. Has sabertooth tiger companion in wagon</li>
                     </ul>
                 </div>
@@ -654,7 +643,7 @@
                         <p style="font-size: 0.875rem;"><strong>Features:</strong></p>
                         <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
                             <li><strong>Shapechanger (Action, 1 Stress):</strong> Transform between human, wolf, or hybrid form. Equipment merges. Stats same in all forms except wolf (can't use weapons)</li>
-                            <li><strong>Lycanthropy Curse (Passive):</strong> Humanoid bitten must make Difficulty 13 Strength save or contract lycanthropy. Curse can be removed by Remove Curse spell or wolfsbane cure</li>
+                            <li><strong>Lycanthropy Curse (Passive):</strong> Humanoid bitten must spend Hope or contract lycanthropy. Curse can be removed by Remove Curse spell or wolfsbane cure</li>
                             <li><strong>Damage Resistance (Passive):</strong> Resistant to physical damage from non-magical, non-silvered weapons (half damage)</li>
                             <li><strong>Pack Tactics (Passive):</strong> Advantage on attacks if ally within Very Close of target</li>
                             <li><strong>Keen Senses (Passive):</strong> Advantage on Instinct checks involving hearing or smell. Can track by scent</li>
@@ -782,7 +771,7 @@
                         <h4 style="color: #f87171; margin: 0 0 0.5rem 0;">Dire Wolves - Standard</h4>
                         <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Enormous wolves with shaggy black fur and glowing red eyes.</p>
                         <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 13 | Thresholds 7/11 | HP 4 | Stress 3 | Attack +2</p>
-                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Bite (2d6+3 physical, knocks Prone on Major)</p>
+                        <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Bite (2d6+3 physical, knocks down on Major threshold)</p>
                         <p style="font-size: 0.875rem;"><strong>Features:</strong> Pack Tactics, Keen Hearing and Smell, Pounce, Relentless Tracker</p>
                     </div>
 
@@ -904,7 +893,7 @@
                         <p style="font-style: italic; color: #9ca3af; font-size: 0.875rem; margin-bottom: 0.5rem;">Evil flying broom that attacks anyone who grabs it. Can carry riders like a broom of flying, but at half capacity.</p>
                         <p style="font-size: 0.75rem; color: #9ca3af;">Difficulty 10 | No Thresholds | HP 1 | Stress 1 | Attack +0</p>
                         <p style="font-size: 0.875rem; margin-top: 0.5rem;"><strong>Attack:</strong> Broomstick Bash (1d4 physical)</p>
-                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Minion (4), Flight (can fly), Animated Object (immune to poison/psychic, blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone), Antimagic Susceptibility, False Appearance (looks like normal broom), Treacherous (appears to be broom of flying)</p>
+                        <p style="font-size: 0.875rem;"><strong>Features:</strong> Minion (4), Flight (can fly), Animated Object (cannot be affected by psychic damage, mental influence, curses of weakness, or environmental needs. Ignores most debilitating magic), Antimagic Susceptibility, False Appearance (looks like normal broom), Treacherous (appears to be broom of flying)</p>
                     </div>
 
                     <!-- SWARMS OF BATS -->
@@ -1002,7 +991,7 @@
                     
                     <p style="font-size: 0.875rem; margin-top: 0.75rem;"><strong>Features:</strong></p>
                     <ul style="font-size: 0.875rem; margin-left: 1.5rem;">
-                        <li><strong>Hold Vampires (1 charge):</strong> Vampires within 30ft make Difficulty 16 Instinct roll with Fear or paralyzed 1 minute</li>
+                        <li><strong>Hold Vampires (1 charge):</strong> Vampires within 30ft must spend Hope or cannot take actions for 1 minute, mark 1 Stress each turn</li>
                         <li><strong>Turn Undead Enhanced (3 charges):</strong> Undead roll with disadvantage</li>
                         <li><strong>Sunlight (5 charges):</strong> TRUE SUNLIGHT in 30ft radius for 10 minutes</li>
                         <li><strong>Healing Light (1/dawn):</strong> Heal 3d8+4 HP and clear 2 Stress (30ft range)</li>
@@ -1061,7 +1050,7 @@
 
                     <div class="card">
                         <h4>Saint Markovia's Thighbone</h4>
-                        <p style="font-size: 0.875rem;">Mace, Attack +2, Damage 2d6+2. Vampires hit make Difficulty 13 roll or stunned.</p>
+                        <p style="font-size: 0.875rem;">Mace, Attack +2, Damage 2d6+2. Vampires hit must spend Hope or cannot take actions until end of their next turn.</p>
                         <p style="font-size: 0.75rem; color: #9ca3af;">Crumbles to dust after use in battle vs vampires</p>
                     </div>
 
@@ -1213,7 +1202,7 @@
                     
                     <h4 style="margin-top: 1rem;">Features</h4>
                     <ul style="font-size: 0.875rem;">
-                        <li><strong>Deep Swamp (Passive):</strong> Difficult terrain, Agility Difficulty 13 or fall prone in mud</li>
+                        <li><strong>Deep Swamp (Passive):</strong> Difficult terrain. Players must spend Hope or fall down in mud when moving through area</li>
                         <li><strong>Scarecrow Sentries (Passive):</strong> 6 scarecrows guard the perimeter, alert Baba Lysaga</li>
                         <li><strong>Walking Hut (Action):</strong> Baba Lysaga's giant skull hut can move and attack (Tier 3 construct)</li>
                         <li><strong>Swarm Summons (Action):</strong> Baba Lysaga calls endless insect swarms from the swamp</li>
