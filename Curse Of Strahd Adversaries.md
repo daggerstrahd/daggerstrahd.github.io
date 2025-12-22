@@ -70,9 +70,9 @@ Strahd can climb any surface, including upside down on ceilings, without needing
 When reduced to 0 HP outside his coffin (and not in sunlight/running water), Strahd transforms into mist form instead of being defeated. He must reach his coffin within 2 hours.
 
 **Charm - Action (3 Stress)**  
-Strahd targets one humanoid within Close range. They must make a Presence + Instinct roll (Difficulty 19). On a failure, they become charmed and view Strahd as a trusted friend for 24 hours or until Strahd or his allies harm them. Charmed targets will allow Strahd to bite them.
+Strahd targets one humanoid within Close range. Spend a Fear to force them to make a Presence Reaction Roll (19). On a failure, they become charmed and view Strahd as a trusted friend for 24 hours or until Strahd or his allies harm them. Charmed targets will allow Strahd to bite them.
 
-**Children of the Night - Action (4 Stress, once per session)**  
+**Children of the Night - Action (4 Stress, 1 per session)**  
 Strahd summons 2d4 swarms of bats or rats (or 3d6 wolves if outdoors). They arrive in 1d4 rounds and obey his commands for 1 hour.
 
 **Bite - Action (2 Stress)**  
@@ -85,7 +85,7 @@ Strahd can teleport to any unoccupied space within Far range that he can see, pr
 Make an unarmed strike or grapple attempt against a target. This movement doesn't provoke opportunity attacks.
 
 **Dominate - Action (3 Stress)**  
-Strahd attempts to seize control of a creature's mind. Target one creature within Close range. They must make a Presence + Instinct roll (Difficulty 19). On a failure, Strahd can issue a single command that isn't directly harmful to the target, and they must obey it on their next turn.
+Strahd attempts to seize control of a creature's mind. Target one creature within Close range. Spend a Fear to force them to make a Presence Reaction Roll (19). On a failure, Strahd can issue a single command that isn't directly harmful to the target, and they must obey it on their next turn.
 
 ### LAIR ACTIONS
 While in Castle Ravenloft, Strahd can spend 2 Fear at the start of each round to take one of these lair actions:
@@ -133,8 +133,8 @@ Ireena is the reincarnation of Tatyana, Strahd's lost love. She has an inexplica
 **Bite Marks - Passive**  
 Strahd has bitten Ireena twice. She bears the marks on her neck and sometimes experiences vivid nightmares of the vampire. She is more resistant to fear effects from undead (advantage on rolls).
 
-**Iron Will - Reaction**  
-Once per session, when Ireena would be Charmed or dominated, she can immediately make a reroll with Hope.
+**Iron Will - Reaction (1 per session)**  
+When Ireena would be Charmed or dominated, she can immediately make a reroll with Hope.
 
 **Ally Action - Action**  
 If accompanying the party, Ireena can spend Hope to aid an ally within Close range, giving them advantage on their next roll.
@@ -174,17 +174,17 @@ Madam Eva appears old but is ancient beyond measure. She is immune to aging effe
 **Fortune Telling - Action**  
 Madam Eva can read the tarokka cards to divine the future. This is primarily a narrative ability used to conduct the Fortunes of Ravenloft reading that determines artifact locations. She cannot be forced to read fortunes.
 
-**Evil Eye - Action (2 Stress, once per long rest)**  
-Madam Eva targets one creature within Close range. The target must make an Instinct roll (Difficulty 16) or be affected by one of the following: charmed, paralyzed, or compelled to speak only truth for 1 hour. If the target succeeds, Madam Eva is Blinded until the end of her next turn.
+**Evil Eye - Action (2 Stress, 1 per long rest)**  
+Madam Eva targets one creature within Close range. Spend a Fear to force them to make an Instinct Reaction Roll (16). On a failure, they are affected by one of the following: Charmed, Paralyzed, or compelled to speak only truth for 1 hour. If the target succeeds, Madam Eva is Blinded until the end of her next turn.
 
 **Curse - Action (3 Stress)**  
-Madam Eva places a curse on a creature she can see within Close range. The target must make a Presence roll (Difficulty 16) or suffer a curse of the GM's choice (disadvantage on certain rolls, bad luck, haunting visions, etc.). The curse lasts until removed by powerful magic. If Madam Eva dies while the curse is active, she takes 5d6 magic damage (which may kill her permanently).
+Madam Eva places a curse on a creature she can see within Close range. Spend a Fear to force them to make a Presence Reaction Roll (16). On a failure, they suffer a curse of the GM's choice (disadvantage on certain rolls, bad luck, haunting visions, etc.). The curse lasts until removed by powerful magic. If Madam Eva dies while the curse is active, she takes 5d6 magic damage (which may kill her permanently).
 
 **Vistani Insight - Passive**  
 Madam Eva can sense the general disposition and intentions of those she meets. She knows when someone is lying to her.
 
-**Protected by Fate - Reaction**  
-Once per session, when Madam Eva would be reduced to 0 HP, she instead remains at 1 HP and teleports to a safe location of the GM's choice.
+**Protected by Fate - Reaction (1 per session)**  
+When Madam Eva would be reduced to 0 HP, she instead remains at 1 HP and teleports to a safe location of the GM's choice.
 
 ### ROLEPLAYING MADAM EVA
 
@@ -223,7 +223,7 @@ Rahadin has advantage on Agility rolls to hide or move silently.
 The souls of those Rahadin has killed shriek around him constantly. Any creature that starts its turn within Very Close range of Rahadin must mark 1 Stress or become Frightened until the end of their turn.
 
 **Deathly Choir - Action (2 Stress)**  
-Rahadin unleashes the full force of the tormented souls. All enemies within Close range must make an Instinct roll (Difficulty 17) or mark 2 Stress and gain the Frightened condition until the end of the round.
+Rahadin unleashes the full force of the tormented souls. Spend a Fear to force all enemies within Close range to make an Instinct Reaction Roll (17). Those who fail mark 2 Stress and gain the Frightened condition until the end of the round.
 
 **Perfect Warrior - Reaction (1 Stress)**  
 When attacked, Rahadin can spend his reaction to gain +3 to his Difficulty against that attack.
@@ -340,7 +340,7 @@ When attacking a target that's also threatened by an ally within Melee range, th
 The werewolf has advantage on Instinct rolls that rely on hearing or smell.
 
 **Curse of Lycanthropy - Special**  
-A humanoid infected with lycanthropy must make a Presence roll (Difficulty 14) after each long rest. After three failures, they become a werewolf under the GM's control during full moons. The curse can be removed with powerful magic.
+A humanoid infected with lycanthropy must make a Presence Reaction Roll (14) after each Long Rest. After three failures, they become a werewolf under the GM's control during full moons. The curse can be removed with powerful magic or the Remove Curse ritual.
 
 ---
 
@@ -371,8 +371,8 @@ Each night hag carries a heartstone and soul bag. The heartstone allows ethereal
 **Etherealness - Action (2 Stress)**  
 The night hag becomes ethereal, able to move through solid objects and invisible to those on the material plane. She can attack from the ethereal plane but takes 1 Stress to do so.
 
-**Nightmare Haunting - Action (3 Stress, once per long rest)**  
-Target one sleeping creature within Far range. The hag invades their dreams. The target must make an Instinct roll (Difficulty 16) or gain no benefit from that rest and mark 2 Stress upon waking.
+**Nightmare Haunting - Action (3 Stress, 1 per long rest)**  
+Target one sleeping creature within Far range. The hag invades their dreams. Spend a Fear to force them to make an Instinct Reaction Roll (16). On a failure, they gain no benefit from that Long Rest and mark 2 Stress upon waking.
 
 **Hag Coven - Special**  
 When three hags work together, they gain access to powerful shared magic. They can cast powerful curses, create illusions, and scry on distant targets.
@@ -537,11 +537,11 @@ Deception +2, Stealth +2, Socialite +1
 
 ### FEATURES
 
-**Vistani Curse - Action (3 Stress, once per long rest)**  
-The Vistana places a minor curse on a creature they can see within Close range. The target must make a Presence roll (Difficulty 14) or suffer disadvantage on one type of roll (GM's choice) until the curse is removed.
+**Vistani Curse - Action (3 Stress, 1 per long rest)**  
+The Vistana places a minor curse on a creature they can see within Close range. Spend a Fear to force the target to make a Presence Reaction Roll (14). On a failure, they suffer disadvantage on one type of roll (GM's choice) until the curse is removed.
 
 **Evil Eye - Action (2 Stress)**  
-Target one creature within Very Close range. They must make an Instinct roll (Difficulty 13) or be charmed, frightened, or paralyzed (Vistana's choice) for 1 minute. If they succeed, the Vistana is Blinded until the end of their next turn.
+Target one creature within Very Close range. Spend a Fear to force them to make an Instinct Reaction Roll (13). On a failure, they are Charmed, Frightened, or Paralyzed (Vistana's choice) for 1 minute. If they succeed, the Vistana is Blinded until the end of their next turn.
 
 **Treacherous - Passive**  
 Vistani bandits appear friendly at first. They have advantage on Presence rolls to deceive.
@@ -596,7 +596,7 @@ Intimidation +2, Stealth +2
 ### FEATURES
 
 **Terrifying Glare - Action (2 Stress)**  
-Target one creature within Close range. They must make a Presence roll (Difficulty 14) or become Frightened until the end of their next turn.
+Target one creature within Close range. Spend a Fear to force them to make a Presence Reaction Roll (14). On a failure, they become Frightened until the end of their next turn.
 
 **Bound by Evil - Passive**  
 The scarecrow is immune to being charmed or frightened.
@@ -749,10 +749,10 @@ Intimidation +2, Stealth +3
 The ghost can move through solid objects and creatures. It can choose to become visible or invisible as an action.
 
 **Horrifying Visage - Action (2 Stress)**  
-Target one creature within Close range. They must make a Presence roll (Difficulty 14) or become Frightened and age 1d4×10 years. The aging can be reversed by magic.
+Target one creature within Close range. Spend a Fear to force them to make a Presence Reaction Roll (14). On a failure, they become Frightened and age 1d4×10 years. The aging can be reversed by magic.
 
-**Possession - Action (3 Stress, once per long rest)**  
-The ghost attempts to possess a humanoid within Very Close range. Target must make a Presence + Instinct roll (Difficulty 15). On failure, the ghost disappears and the target is possessed. While possessed, the ghost controls the body. The possession lasts until the host drops to 0 HP, the ghost ends it, or it's forced out by magic.
+**Possession - Action (3 Stress, 1 per long rest)**  
+The ghost attempts to possess a humanoid within Very Close range. Spend a Fear to force them to make a Presence Reaction Roll (15). On a failure, the ghost disappears and the target is possessed. While possessed, the ghost controls the body. The possession lasts until the host drops to 0 HP, the ghost ends it, or it's forced out by magic.
 
 **Incorporeal Movement - Passive**  
 The ghost can move through creatures and objects. If it ends its turn inside an object, it takes 1d6 damage.
